@@ -16,7 +16,7 @@ import {
 } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { ThemeProvider, useTheme } from "next-themes";
-import { Sun, Moon } from "lucide-react";
+import { Sun, Moon, Menu, X, User, ChevronDown } from "lucide-react";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Classify from "./pages/Classify";
@@ -41,6 +41,20 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
@@ -71,10 +85,206 @@ const ThemeToggle = () => {
     <button
       aria-label={t("common.themeToggleAria")}
       onClick={() => setTheme(isDark ? "light" : "dark")}
-      className="inline-flex h-9 w-9 items-center justify-center rounded-md border bg-background hover:bg-accent hover:text-accent-foreground transition-colors"
+      className="inline-flex h-8 w-8 sm:h-9 sm:w-9 items-center justify-center rounded-md border bg-background hover:bg-accent hover:text-accent-foreground transition-colors"
     >
-      {isDark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+      {isDark ? <Sun className="h-3 w-3 sm:h-4 sm:w-4" /> : <Moon className="h-3 w-3 sm:h-4 sm:w-4" />}
     </button>
+  );
+};
+
+// Responsive Language Selector Component
+const LanguageSelector = ({ className = "" }: { className?: string }) => {
+  const { t, i18n } = useTranslation();
+  
+  const currentLang = (i18n.language || "en").startsWith("en")
+    ? "en"
+    : (i18n.language || "en").startsWith("ar")
+      ? "ar"
+      : (i18n.language || "en").startsWith("tr")
+        ? "tr"
+        : (i18n.language || "en").startsWith("es")
+          ? "es"
+          : (i18n.language || "en").startsWith("de")
+            ? "de"
+            : (i18n.language || "en").startsWith("fr")
+              ? "fr"
+              : "en";
+
+  const languageNames = {
+    en: "English",
+    ar: "العربية", 
+    tr: "Türkçe",
+    es: "Español",
+    de: "Deutsch",
+    fr: "Français"
+  };
+
+  return (
+    <div className={className}>
+      <Select
+        value={currentLang}
+        onValueChange={(lng) => {
+          i18n.changeLanguage(lng);
+          try {
+            localStorage.setItem("nbw_i18n_lng", lng);
+          } catch {}
+        }}
+      >
+        <SelectTrigger aria-label="Language" className="h-8 w-full sm:h-9 sm:w-[110px]">
+          <SelectValue placeholder="Language" />
+        </SelectTrigger>
+        <SelectContent>
+          {Object.entries(languageNames).map(([code, name]) => (
+            <SelectItem key={code} value={code}>
+              <span className="sm:hidden">{name}</span>
+              <span className="hidden sm:inline">{code.toUpperCase()}</span>
+            </SelectItem>
+          ))}
+        </SelectContent>
+      </Select>
+    </div>
+  );
+};
+
+// Mobile Navigation Component - artık lg breakpoint'ine kadar görünür
+const MobileNavigation = () => {
+  const { t } = useTranslation();
+  const { user } = useUser();
+  const { tokenCount } = useToken();
+  const displayName = user ? `${user.first_name} ${user.last_name}` : null;
+  const [isOpen, setIsOpen] = useState(false);
+
+  const navItems = [
+    { to: "/", label: t("nav.home") },
+    { to: "/classify", label: t("nav.classify") },
+    { to: "/plans", label: t("nav.plans") },
+    { to: "/integration", label: t("nav.integration") },
+    { to: "/history", label: t("nav.history") },
+    { to: "/about", label: t("nav.about") },
+    { to: "/contact", label: t("nav.contact") },
+  ];
+
+  return (
+    <Sheet open={isOpen} onOpenChange={setIsOpen}>
+      <SheetTrigger asChild>
+        <Button variant="ghost" size="sm" className="xl:hidden p-1 h-8 w-8">
+          <Menu className="h-4 w-4" />
+        </Button>
+      </SheetTrigger>
+      <SheetContent side="left" className="w-[280px] sm:w-[350px]">
+        <SheetHeader>
+          <SheetTitle className="flex items-center gap-2">
+            <img
+              src="/logoBad.png"
+              alt="NoBadWords Logo"
+              className="h-6 w-6 rounded-md"
+            />
+            NoBadWords
+          </SheetTitle>
+        </SheetHeader>
+        
+        <div className="flex flex-col gap-4 mt-6">
+          {/* Token Count - Mobile */}
+          <div className="flex items-center justify-between p-3 bg-muted/50 rounded-lg">
+            <span className="text-sm text-muted-foreground">{t("common.token")}:</span>
+            <span className="font-semibold">{tokenCount ?? 0}</span>
+          </div>
+
+          {/* Navigation Links */}
+          <nav className="flex flex-col gap-2">
+            {navItems.map((item) => (
+              <NavLink
+                key={item.to}
+                to={item.to}
+                className={({ isActive }) =>
+                  `px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                    isActive ? "text-primary bg-primary/10" : "text-muted-foreground hover:text-foreground hover:bg-accent"
+                  }`
+                }
+                onClick={() => setIsOpen(false)}
+              >
+                {item.label}
+              </NavLink>
+            ))}
+          </nav>
+
+          {/* Language Selector - Mobile */}
+          <div className="pt-4 border-t">
+            <label className="text-sm font-medium mb-2 block">{t("common.language") || "Language"}</label>
+            <LanguageSelector className="w-full" />
+          </div>
+
+          {/* User Section - Mobile */}
+          <div className="pt-4 border-t">
+            {displayName ? (
+              <div className="space-y-2">
+                <div className="flex items-center gap-2 p-2 bg-muted/50 rounded-lg">
+                  <User className="h-4 w-4" />
+                  <span className="text-sm font-medium">{displayName}</span>
+                </div>
+                <Button asChild variant="outline" className="w-full" onClick={() => setIsOpen(false)}>
+                  <Link to="/profile">{t("common.profile")}</Link>
+                </Button>
+              </div>
+            ) : (
+              <Button asChild variant="ghost" className="w-full" onClick={() => setIsOpen(false)}>
+                <Link to="/auth">{t("common.login")}</Link>
+              </Button>
+            )}
+          </div>
+
+          {/* CTA Button - Mobile */}
+          <Button asChild className="w-full" onClick={() => setIsOpen(false)}>
+            <Link to="/classify">{t("common.startAnalysis")}</Link>
+          </Button>
+        </div>
+      </SheetContent>
+    </Sheet>
+  );
+};
+
+// Desktop User Menu Component
+const UserMenu = () => {
+  const { t } = useTranslation();
+  const { user } = useUser();
+  const displayName = user ? `${user.first_name} ${user.last_name}` : null;
+
+  if (!displayName) {
+    return (
+      <Button asChild variant="ghost" className="hidden sm:inline-flex h-8 sm:h-9">
+        <Link to="/auth">{t("common.login")}</Link>
+      </Button>
+    );
+  }
+
+  return (
+    <DropdownMenu>
+      <DropdownMenuTrigger asChild>
+        <Button variant="outline" className="hidden sm:inline-flex h-8 sm:h-9 max-w-[150px]">
+          <User className="h-3 w-3 sm:h-4 sm:w-4 mr-1 sm:mr-2" />
+          <span className="truncate text-xs sm:text-sm">{displayName}</span>
+          <ChevronDown className="h-3 w-3 sm:h-4 sm:w-4 ml-1 sm:ml-2" />
+        </Button>
+      </DropdownMenuTrigger>
+      <DropdownMenuContent align="end" className="w-48">
+        <DropdownMenuItem asChild>
+          <Link to="/profile" className="cursor-pointer">
+            {t("common.profile")}
+          </Link>
+        </DropdownMenuItem>
+        <DropdownMenuItem asChild>
+          <Link to="/history" className="cursor-pointer">
+            {t("nav.history")}
+          </Link>
+        </DropdownMenuItem>
+        <DropdownMenuSeparator />
+        <DropdownMenuItem asChild>
+          <Link to="/plans" className="cursor-pointer">
+            {t("nav.plans")}
+          </Link>
+        </DropdownMenuItem>
+      </DropdownMenuContent>
+    </DropdownMenu>
   );
 };
 
@@ -124,7 +334,6 @@ const AppHeader = () => {
 
   const { user } = useUser();
   const location = useLocation();
-  const displayName = user ? `${user.first_name} ${user.last_name}` : null;
   const [isSending, setIsSending] = useState(false);
   const [activationOk, setActivationOk] = useState<boolean>(true);
   const navigate = useNavigate();
@@ -143,7 +352,7 @@ const AppHeader = () => {
           Authorization: `Bearer ${token}`,
         },
         body: JSON.stringify({
-          lang: lang, // 'tr', 'en', 'ar' vb.
+          lang: lang,
         }),
       });
 
@@ -151,9 +360,7 @@ const AppHeader = () => {
 
       if (!res.ok) {
         if (res.status === 429) {
-          // ✅ Çok sık istek gönderilmiş, özel işlem yap
           toast.error(t(data.detail || "verify.sendError"));
-          // Örn: sayacı başlat veya button'u devre dışı bırak
           console.log(data.remaining_seconds);
           navigate("/verify-email", {
             state: {
@@ -164,7 +371,6 @@ const AppHeader = () => {
           });
           return;
         } else {
-          // Diğer hatalar
           toast.error(t(data.detail || "verify.sendError"));
           return;
         }
@@ -181,11 +387,12 @@ const AppHeader = () => {
   }
 
   const navLinkClass = ({ isActive }: { isActive: boolean }) =>
-    `px-3 py-2 rounded-md text-sm font-medium transition-colors ${isActive ? "text-primary" : "text-muted-foreground hover:text-foreground"}`;
+    `px-2 xl:px-3 py-2 rounded-md text-xs xl:text-sm font-medium transition-colors ${
+      isActive ? "text-primary" : "text-muted-foreground hover:text-foreground"
+    }`;
 
   useEffect(() => {
-    const lang = localStorage.getItem("nbw_i18n_lng");
-    const pathKey = location.pathname.replace(/^\//, ""); // baştaki / kaldır
+    const pathKey = location.pathname.replace(/^\//, "");
     if (pathKey == "") 
       document.title = `NoBadWords`;
     else
@@ -207,17 +414,25 @@ const AppHeader = () => {
 
   return (
     <header className="sticky top-0 z-40 w-full border-b bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 items-center justify-between">
-        <Link to="/" className="flex items-center gap-2">
-          <img
-            src="/logoBad.png"
-            alt="NoBadWords Logo"
-            className="h-8 w-8 rounded-md"
-          />
-          <span className="font-extrabold tracking-tight">NoBadWords</span>
-        </Link>
+      <div className="container flex h-14 sm:h-16 items-center justify-between px-4">
+        {/* Logo and Mobile Menu */}
+        <div className="flex items-center gap-2 sm:gap-4">
+          <MobileNavigation />
+          <Link to="/" className="flex items-center gap-2">
+            <img
+              src="/logoBad.png"
+              alt="NoBadWords Logo"
+              className="h-6 w-6 sm:h-8 sm:w-8 rounded-md"
+            />
+            <span className="font-extrabold tracking-tight text-sm sm:text-base">
+              <span className="sm:hidden">NBW</span>
+              <span className="hidden sm:inline">NoBadWords</span>
+            </span>
+          </Link>
+        </div>
 
-        <nav className="hidden md:flex items-center gap-1">
+        {/* Desktop Navigation - 1160px breakpoint için xl: kullanıyoruz */}
+        <nav className="hidden xl:flex items-center gap-1">
           <NavLink to="/" className={navLinkClass}>
             {t("nav.home")}
           </NavLink>
@@ -240,73 +455,45 @@ const AppHeader = () => {
             {t("nav.contact")}
           </NavLink>
         </nav>
-        <div className="flex items-center gap-3">
-          <div className="text-xs md:text-sm text-muted-foreground">
+
+        {/* Right Side Actions */}
+        <div className="flex items-center gap-1 sm:gap-2 xl:gap-3">
+          {/* Token Count - Desktop/Tablet */}
+          <div className="hidden sm:block text-xs xl:text-sm text-muted-foreground">
             {t("common.token")}:{" "}
             <span className="font-semibold text-foreground">
               {tokenCount ?? 0}
             </span>
           </div>
-          <div className="hidden sm:block w-[110px]">
-            <Select
-              value={
-                (i18n.language || "en").startsWith("en")
-                  ? "en"
-                  : (i18n.language || "en").startsWith("ar")
-                    ? "ar"
-                    : (i18n.language || "en").startsWith("tr")
-                      ? "tr"
-                      : (i18n.language || "en").startsWith("es")
-                        ? "es"
-                        : (i18n.language || "en").startsWith("de")
-                          ? "de"
-                          : (i18n.language || "en").startsWith("fr")
-                            ? "fr"
-                            : "en"
-              }
-              onValueChange={(lng) => {
-                i18n.changeLanguage(lng);
-                try {
-                  localStorage.setItem("nbw_i18n_lng", lng);
-                } catch {}
-              }}
-            >
-              <SelectTrigger aria-label="Language" className="h-9">
-                <SelectValue placeholder="EN/AR/TR/ES/DE/FR" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="en">EN</SelectItem>
-                <SelectItem value="ar">AR</SelectItem>
-                <SelectItem value="tr">TR</SelectItem>
-                <SelectItem value="es">ES</SelectItem>
-                <SelectItem value="de">DE</SelectItem>
-                <SelectItem value="fr">FR</SelectItem>
-              </SelectContent>
-            </Select>
-          </div>
+
+          {/* Language Selector - Desktop */}
+          <LanguageSelector className="hidden sm:block" />
+          
+          {/* Theme Toggle */}
           <ThemeToggle />
-          {displayName ? (
-            <Button asChild variant="outline" className="hidden sm:inline-flex">
-              <Link to="/profile">{displayName}</Link>
-            </Button>
-          ) : (
-            <Button asChild variant="ghost" className="hidden sm:inline-flex">
-              <Link to="/auth">{t("common.login")}</Link>
-            </Button>
-          )}
-          <Button asChild>
-            <Link to="/classify">{t("common.startAnalysis")}</Link>
+          
+          {/* User Menu */}
+          <UserMenu />
+          
+          {/* CTA Button */}
+          <Button asChild size="sm" className="text-xs sm:text-sm h-8 sm:h-9">
+            <Link to="/classify">
+              <span className="sm:hidden">{t("common.analyze") || "Analyze"}</span>
+              <span className="hidden sm:inline">{t("common.startAnalysis")}</span>
+            </Link>
           </Button>
         </div>
       </div>
+
+      {/* Activation Alert */}
       {!activationOk && (
         <div className="border-t">
-          <div className="container py-2">
+          <div className="container py-2 px-4">
             <Alert>
-              <AlertTitle>{t("common.activateTitle")}</AlertTitle>
-              <AlertDescription className="flex items-center justify-between gap-2">
+              <AlertTitle className="text-sm">{t("common.activateTitle")}</AlertTitle>
+              <AlertDescription className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 text-xs sm:text-sm">
                 <span>{t("common.activateDesc")}</span>
-                <Button size="sm" onClick={handleSendEmail}>
+                <Button size="sm" onClick={handleSendEmail} className="self-start sm:self-auto">
                   {t("common.activateNow")}
                 </Button>
               </AlertDescription>
@@ -324,23 +511,20 @@ const AppContent = () => {
   const cookie_consent = localStorage.getItem("cookie_consent");
   const [consentGiven, setConsentGiven] = useState(cookie_consent === "true");
   const { tempUser, createTempUser } = useTempUser();
-  const { tokenCount, setTokenCount } = useToken(); // Artık Provider içinde
+  const { tokenCount, setTokenCount } = useToken();
   const { i18n } = useTranslation();
 
   useEffect(() => {
-    // Eğer dil localStorage'da yoksa
     const storedLang = localStorage.getItem("nbw_i18n_lng");
     if (!storedLang) {
       const langs = navigator.languages || [navigator.language];
       const supported = ["en", "ar", "tr", "es", "de", "fr"];
 
-      // Kullanıcının tercih ettiği dillerden ilk destekleneni bul
       const detected =
         langs.find((l) =>
           supported.some((s) => l.toLowerCase().startsWith(s)),
         ) || "en";
 
-      // i18n'e uygula ve localStorage'a yaz
       i18n.changeLanguage(detected);
       localStorage.setItem("nbw_i18n_lng", detected);
     }
@@ -385,7 +569,6 @@ const AppContent = () => {
     } catch (error: any) {
       console.log(error);
       if (error.blocked_until) {
-        // toast’ı parametre ile kullan
         toast.error(t(error.detail, { blocked_until: error.blocked_until }));
       } else {
         toast.error(t(error.message || "Unknown error"));
@@ -397,7 +580,7 @@ const AppContent = () => {
     <BrowserRouter>
       {!consentGiven && <CookieConsent onAccept={handleConsentAccept} />}
       <AppHeader />
-      <main className="min-h-[calc(100dvh-4rem)]">
+      <main className="min-h-[calc(100dvh-3.5rem)] sm:min-h-[calc(100dvh-4rem)]">
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/classify" element={<Classify />} />
@@ -418,22 +601,26 @@ const AppContent = () => {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
+      
+      {/* Responsive Footer */}
       <footer className="border-t bg-background">
-        <div className="container py-6 text-sm text-muted-foreground flex items-center justify-between">
-          <p>© {new Date().getFullYear()} NoBadWords</p>
-          <div className="flex items-center gap-4">
-            <Link to="/plans" className="hover:text-foreground">
-              {t("common.pricing")}
-            </Link>
-            <Link to="/about" className="hover:text-foreground">
-              {t("nav.about")}
-            </Link>
-            <Link to="/contact" className="hover:text-foreground">
-              {t("nav.contact")}
-            </Link>
-            <Link to="/profile" className="hover:text-foreground">
-              {t("common.profile")}
-            </Link>
+        <div className="container py-4 sm:py-6 px-4 text-xs sm:text-sm text-muted-foreground">
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+            <p>© {new Date().getFullYear()} NoBadWords</p>
+            <div className="flex flex-wrap items-center gap-3 sm:gap-4">
+              <Link to="/plans" className="hover:text-foreground">
+                {t("common.pricing")}
+              </Link>
+              <Link to="/about" className="hover:text-foreground">
+                {t("nav.about")}
+              </Link>
+              <Link to="/contact" className="hover:text-foreground">
+                {t("nav.contact")}
+              </Link>
+              <Link to="/privacy" className="hover:text-foreground">
+                {t("common.privacy") || "Privacy"}
+              </Link>
+            </div>
           </div>
         </div>
       </footer>
@@ -451,7 +638,7 @@ const App = () => {
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <UserProvider>
             <TokenProvider>
-              <AppContent /> {/* Provider içinde çalışır */}
+              <AppContent />
             </TokenProvider>
           </UserProvider>
         </ThemeProvider>
