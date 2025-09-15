@@ -1,0 +1,804 @@
+{
+  "nav": {
+    "home": "Anasayfa",
+    "classify": "Analiz",
+    "plans": "Planlar",
+    "integration": "Entegrasyon",
+    "history": "Geçmiş",
+    "about": "Hakkımızda",
+    "contact": "İletişim"
+  },
+   "title": {
+    "home": "Anasayfa",
+    "classify": "Analiz",
+    "plans": "Planlar",
+    "history": "Geçmiş",
+    "integration": "Entegrasyon",
+    "feedback": "Geri Bildirim",
+    "auth": "Giriş/Kayıt",
+    "forgot": "Şifre Hatırlatma",
+    "reset": "Şifre Sıfırlama",
+    "activation": "Hesap Aktivasyonu",
+    "profile": "Profil",
+    "about": "Hakkımızda",
+    "contact": "İletişim",
+    "payment/confirm": "Ödeme Onayı",
+    "privacy": "Gizlilik Politikası",
+    "verify-email": "E-posta Doğrulama",
+    "notfound": "Sayfa Bulunamadı"
+  },
+  "common": {
+    "token": "Token",
+    "themeToggleAria": "Tema değiştir",
+    "pricing": "Fiyatlandırma",
+    "profile": "Profil",
+    "copyCode": "Kodu Kopyala",
+    "apiUsage": "API ile kullanım",
+    "freeStart": "Ücretsiz başlayın",
+    "tryNow": "Hemen Dene",
+    "viewPlans": "Planları Gör",
+    "login": "Giriş",
+    "loginRegister": "Giriş / Kayıt",
+    "startAnalysis": "Analize Başla",
+    "activateTitle": "E-postanı doğrula",
+    "activateDesc": "Tüm özellikleri açmak için e-postanı aktifleştir (demo).",
+    "activateNow": "Aktifleştir",
+    "activated": "Aktif",
+    "loading": "Yükleniyor",
+    "notFound": "Bulunamadı"
+  },
+  "verify": {
+    "title": "E‑postanı doğrula",
+    "desc": "6 haneli bir kod gönderdik: {{email}}",
+    "codeLabel": "Doğrulama kodunu gir",
+    "submit": "Doğrula",
+    "resend": "Kodu tekrar gönder",
+    "sent": "Doğrulama kodu gönderildi",
+    "invalid": "Kod geçersiz",
+    "success": "E‑posta doğrulandı",
+    "congratsTitle": "Tebrikler!",
+    "congratsDesc": "E‑postanız doğrulandı. Hediyenizle birlikte aramıza hoş geldiniz!",
+    "continue": "Devam et",
+    "demoCode": "Demo kodu: {{code}}",
+    "sendError": "Doğrulama gönderilemedi"
+  },
+  "hero": {
+    "badge": "AI destekli toksisite tespiti",
+    "title": "Metinlerinizi güvenle moderasyonlayın",
+    "desc": "Kısa mesajlarda toksik kelimeleri listeleyin, uzun metinlerde 1/0 sonucu alın. İster panelden, ister API ile.",
+    "limitInfo": "Giriş öncesi 75, giriş sonrası 1000 günlük token limiti.",
+    "perks": [
+      "99.9% Uptime",
+      "Dakikalar içinde entegrasyon",
+      "GDPR uyumlu",
+      "Gerçek zamanlı"
+    ]
+  },
+  "features": {
+    "title": "Özellikleri",
+    "description": "Platformumuzun temel özellikleri, kullanıcı deneyimini kolaylaştırmak ve verimli bir şekilde içerik üretmenizi sağlamak için tasarlanmıştır.",
+    "secureModeration": {
+      "title": "Güvenli Moderasyon",
+      "desc": "AI + kelime tabanlı algoritma ile toksik içerikleri yakalayın. Geri bildirim ile sürekli iyileştirme."
+    },
+    "easyIntegration": {
+      "title": "Kolay Entegrasyon",
+      "desc": "API anahtarı ile uygulamalarınıza dakikalar içinde entegre edin. Token bazlı kullanım ve sınırlama."
+    },
+    "historyAnalytics": {
+      "title": "Geçmiş ve Analitik",
+      "desc": "Önceki analizleri görüntüleyin, silin ve hatalı sınıflandırmaları raporlayın."
+    }
+  },
+  "how": {
+    "title": "Nasıl Çalışır",
+    "steps": [
+      {
+        "title": "Metni Gönder",
+        "desc": "Panelden veya API üzerinden metninizi iletin"
+      },
+      {
+        "title": "AI + Sözlük",
+        "desc": "Hibrit model toksisite tespiti yapar"
+      },
+      {
+        "title": "Sonucu Alın",
+        "desc": "Kısa metinde kelimeler, uzun metinde 1/0 + oran"
+      }
+    ]
+  },
+  "languages": {
+    "nameTr": "Türkçe",
+    "nameAr": "Arapça",
+    "nameEn": "İngilizce",
+    "flagTr": "🇹🇷",
+    "flagAr": "🇮🇶",
+    "flagEn": "🇺🇸",
+    "full": "Tam Destek",
+    "partial": "Kısmi Destek",
+    "fullDescription": "Yüksek doğruluk oranıyla filtreleme",
+    "partialDescription": "Temel filtreleme özellikleri",
+    "exampleAr": "مثال: 'هذا نص جميل جدًا' ← نظيف",
+    "exampleTr": "Örnek: 'Bu çok güzel bir metin' → Temiz",
+    "exampleEn": "Example: 'This is a very nice text' → Clean",
+    "highAccuracy": "Yüksek Doğruluk",
+    "fastProcessing": "Hızlı İşlem",
+    "comprehensiveDictionary": "Kapsamlı Sözlük",
+    "basicFiltering": "Temel Filtreleme",
+    "continuousImprovement": "Sürekli Gelişim",
+    "title": "Çoklu Dil Desteği",
+    "subtitle": "Üç Dilde Güçlü Filtreleme",
+    "description": "Yapay zeka modelimiz Türkçe ve Arapça için tam destek, İngilizce için kısmi destek sunarak geniş bir kullanıcı kitlesine hizmet verir."
+  },
+  "testimonials": {
+    "title": "Kullanıcılarımız Ne Diyor",
+    "items": [
+      "Topluluk uygulamamızda toksik içerik %80 azaldı.",
+      "API entegrasyonu 15 dakikada bitti.",
+      "Destek ekibi harika çalışıyor."
+    ]
+  },
+  "faq": {
+    "title": "Sık Sorulan Sorular",
+    "q1": "Token limitleri nasıl çalışır?",
+    "a1": "Giriş öncesi 75, giriş sonrası 1000 günlük token. Plan satın alarak token ekleyebilirsiniz.",
+    "q2": "Ödemeler nasıl alınır?",
+    "a2": "iyzico üzerinden güvenli ödeme sonrası API anahtarınız ve tokenleriniz aktifleştirilir.",
+    "q3": "Hangi sonuç döner?",
+    "a3": "Kısa metinde toxic kelimeler listesi, uzun metinde 1/0 ve toxic_ratio yüzdesi döner."
+  },
+  "cta": {
+    "title": "Ücretsiz başlayın",
+    "desc": "Free Demo ile 1.000 token. İstediğiniz zaman plan yükseltin veya ekstra token satın alın."
+  },
+  "code": {
+    "exampleText": "örnek metin"
+  },
+  "plans": {
+    "badge": "Esnek planlar",
+    "title": "Planlar ve Fiyatlandırma",
+    "subtitle": "İhtiyacınıza göre token ve süre seçenekleri. İstediğiniz zaman yükseltin ya da ek token alın.",
+    "recommended": "Önerilen",
+    "perPackage": "/ paket",
+    "token": "token",
+    "days": "gün",
+    "buy": "Satın Al",
+    "paid": "Ödendi",
+    "unpaid": "Ödenmedi",
+    "active": "Aktif",
+    "inactive": "Deaktif",
+    "features": {
+      "api": "API erişimi",
+      "history": "Geçmiş görüntüleme",
+      "supportStandard": "Standart destek",
+      "feedbackPriority": "Geri bildirim önceliği",
+      "securityAdvanced": "Gelişmiş güvenlik",
+      "supportPriority": "Öncelikli destek",
+      "dedicatedManager": "Özel hesap yöneticisi",
+      "customSLA": "Özel SLA",
+      "limit": "{{n}} token"
+    },
+    "items": {
+      "free": {
+        "desc": "Başlamak için ideal"
+      },
+      "starter": {
+        "desc": "Hobi ve küçük projeler"
+      },
+      "pro": {
+        "desc": "Büyüyen ekipler için"
+      },
+      "enterprise": {
+        "desc": "Kurumsal ihtiyaçlar"
+      }
+    }
+  },
+  "classify": {
+    "title": "Metin Analizi (Classify)",
+    "desc": "Kısa mesajlarda tespit edilen toksik kelimeleri listeler. Uzun metinlerde 1 (toxic) veya 0 (non-toxic) sonucu döner.",
+    "pasteTitle": "Metninizi yapıştırın",
+    "placeholder": "Metni buraya girin...",
+    "dailyLimitLabel": "Günlük limit",
+    "usedLabel": "Kullanılan",
+    "remainingLabel": "Kalan",
+    "consume": "Bu yaklaşık ~ {{n}} token kullandı",
+    "dailyUsage": "Günlük kullanım",
+    "analyzing": "Analiz ediliyor...",
+    "analyze": "Analiz Et",
+    "limitExceeded": "Günlük limit aşlıyor. Metni kısaltın veya giriş yapın.",
+    "resultTitle": "Sonuç",
+    "toxic": "Küfürlü",
+    "nonToxic": "Küfürsüz",
+    "toxicRatioViz": "Küfür oranı görselleştirmesi",
+    "toxicWords": "Küfürlü kelimeler",
+    "analysisError": "Analiz sırasında hata oluştu",
+    "networkError": "Ağ hatası",
+    "fields": {
+      "predicted_class": "Tahmin Edilen Sınıf",
+      "toxic_ratio": "Toksik Oranı",
+      "tokens": "Tokenler",
+      "is_temp": "Geçici",
+      "usage": "Token Kullanımı",
+      "used": "Harcanan",
+      "remaining": "Kalan"
+    }
+  },
+  "feedback": {
+    "toastSuccess": "Geri bildiriminiz alındı, teşekkürler!",
+    "toastError": "Geri bildirim kaydedilemedi",
+    "ask": "Sonuç hakkında geri bildirim bırakmak ister misiniz?",
+    "send": "Gönder",
+    "prompt": "Neyi yanlış gördünüz? Kısaca açıklayın.",
+    "placeholder": "Örn: 'nefret' olarak işaretlenmemeliydi...",
+    "cancel": "Vazgeç",
+    "feedbackLimit": "Günlük geri bildirim sınırına ulaştınız. Yarın tekrar deneyin.",
+    "sending": "Geri bildirim gönderiliyor"
+  },
+  "integration": {
+    "title": "Entegrasyon",
+    "desc": "API anahtarınızı kullanarak NoBadWords'i uygulamanıza bağlayın. Profil > API Anahtarları bölümünden anahtar oluşturun ve aşağıdaki örnekleri izleyin.",
+    "basics": {
+      "title": "Temel Bilgiler",
+      "baseUrl": "Base URL",
+      "endpoint": "Endpoint",
+      "auth": "Auth",
+      "body": "Body"
+    },
+    "examples": {
+      "title": "Örnek Kullanım"
+    },
+    "tabs": {
+      "curl": "cURL",
+      "node": "Node.js (fetch)",
+      "python": "Python (requests)"
+    },
+    "response": {
+      "title": "Örnek Yanıt"
+    },
+    "errors": {
+      "title": "Hata Yönetimi",
+      "unauthorized": "401 Unauthorized: API anahtarı eksik/yanlış.",
+      "tooMany": "429 Too Many Requests: Token limitiniz doldu.",
+      "badRequest": "400 Bad Request: Geçersiz JSON veya boş metin."
+    },
+    "security": {
+      "title": "Güvenlik Önerileri",
+      "noClientStore": "API anahtarını istemci kodunda saklamayın; sunucu tarafında proxy edin.",
+      "rotateKeys": "Anahtarları düzenli aralıklarla döndürün (rotate).",
+      "rateLimit": "Oran sınırlama (rate limit) ve IP kısıtlamaları uygulayın."
+    }
+  },
+  "history": {
+    "title": "Geçmiş",
+    "desc": "Önceki analizleriniz burada listelenecek. Aşağıdaki filtrelerle arama yapabilirsiniz.",
+    "searchLabel": "Arama",
+    "searchPlaceholder": "metinde ara...",
+    "startLabel": "Başlangıç",
+    "endLabel": "Bitiş",
+    "predLabel": "Tahmin",
+    "selectPlaceholder": "Seçin",
+    "predAll": "Hepsi",
+    "predToxic": "Toxic (1)",
+    "predNonToxic": "Non‑toxic (0)",
+    "minRatioLabel": "Min. toxic_ratio (%)",
+    "minRatioPlaceholder": "örn. 80",
+    "onlyWithWords": "Sadece toxic_words içerenler",
+    "reset": "Sıfırla",
+    "filter": "Filtrele",
+    "empty": "Henüz içerik yok. Analiz yaptıktan sonra geçmiş burada görünecek.",
+    "table": {
+      "date": "Tarih",
+      "predicted_class": "Tahmini Sınıf",
+      "toxic_ratio": "Toksik Oranı",
+      "tokens": "Tokenlar",
+      "toxic_words": "Toksik Kelimeler",
+      "text": "Metin"
+    }
+  },
+  "about": {
+    "title": "Hakkımızda",
+    "intro": "NoBadWords, topluluklarınızı ve uygulamalarınızı güvenli tutmak için modern toksisite tespiti sunar. Hızlı, güvenilir ve geliştirici dostu.",
+    "badge": "Rozet",
+    "floating": [
+      "AI",
+      "Küfürsüz Mesajlar",
+      "Güvenli",
+      "Toksik İçerik Yok"
+    ],
+    "robotBubble": "Temiz içerik",
+    "stats": {
+      "processed": "İşlenen Mesaj",
+      "latency": "Ortalama Gecikme",
+      "accuracy": "Doğruluk",
+      "uptime": "Uptime"
+    },
+    "features": {
+      "security": {
+        "title": "Güvenlik",
+        "desc": "Güncel tekniklerle yüksek doğruluk"
+      },
+      "community": {
+        "title": "Topluluk",
+        "desc": "Milyonlarca mesajı güvenle işle"
+      },
+      "success": {
+        "title": "Başarı",
+        "desc": "Performans ve ölçeklenebilirlik"
+      }
+    },
+    "mission": {
+      "title": "Misyon",
+      "desc": "Zararlı dili erken tespit ederek daha sağlıklı topluluklar oluşturmayı kolaylaştırmak.",
+      "items": [
+        "Geliştirici dostu API",
+        "Adil ve şeffaf metrikler",
+        "Sürekli iyileşen modeller"
+      ]
+    },
+    "vision": {
+      "title": "Vizyon",
+      "desc": "İçerik güvenliğinde küresel ölçekte referans olmak ve herkes için erişilebilir kılmak.",
+      "items": [
+        "Gerçek zamanlı moderasyon",
+        "Çok dilli kapsama",
+        "Ölçeklenebilir altyapı"
+      ]
+    },
+    "timeline": {
+      "title": "Yolculuğumuz",
+      "items": {
+        "2022": "Fikir ve prototip",
+        "2023": "İlk beta ve entegrasyonlar",
+        "2024": "Çok dilli destek ve analitik",
+        "2025": "Kurumsal planlar ve SLA"
+      }
+    },
+    "cta": {
+      "title": "Topluluğunuzu korumaya hazır mısınız?",
+      "desc": "Hemen ücretsiz deneyin, dilediğiniz zaman plan yükseltin."
+    }
+  },
+  "contact": {
+    "title": "İletişim",
+    "subtitle": "Sorularınız ve iş birlikleri için bize yazın. 24 saat içinde dönüş yapıyoruz.",
+    "toastSuccess": "Mesajınız alındı. Teşekkürler!",
+    "toastError": "Mesaj kaydedilemedi",
+    "form": {
+      "title": "Mesaj Gönder",
+      "nameLabel": "Ad Soyad",
+      "namePlaceholder": "Adınız",
+      "emailLabel": "E-posta",
+      "emailPlaceholder": "ornek@mail.com",
+      "messageLabel": "Mesaj",
+      "messagePlaceholder": "Mesajınızı yazın...",
+      "send": "Gönder"
+    },
+    "info": {
+      "title": "İletişim Bilgileri",
+      "address": "İstanbul, Türkiye",
+      "hours": "Hafta içi 09:00 – 18:00"
+    },
+    "support": {
+      "title": "Destek",
+      "tech": "Teknik",
+      "sales": "Satış",
+      "privacy": "KVKK/GDPR"
+    },
+    "faq": {
+      "title": "Sıkça Sorulanlar",
+      "q1": "Yanıt süreniz nedir?",
+      "a1": "Mesajlara tipik olarak aynı iş günü içinde dönüş yapıyoruz.",
+      "q2": "Demo kullanım sınırı var mı?",
+      "a2": "Giriş öncesi 75, giriş sonrası 1000 günlük token hakkınız bulunur.",
+      "q3": "Kurumsal planlar?",
+      "a3": "Özel SLA ve güvenlik ihtiyaçları için bizimle iletişime geçin."
+    }
+  },
+  "auth": {
+    "title": "Giriş / Kayıt",
+    "tabs": {
+      "login": "Giriş",
+      "register": "Kayıt"
+    },
+    "login": {
+      "idLabel": "Kullanıcı adı / E-posta",
+      "idPlaceholder": "username veya email",
+      "passLabel": "Şifre",
+      "passPlaceholder": "••••••••",
+      "submit": "Giriş Yap",
+      "forgot": "Şifremi Unuttum",
+      "toastInvalid": "Bilgiler hatalı",
+      "toastSuccess": "Giriş başarılı",
+      "loading": "Giriş yapılıyor...",
+      "toastRequired": "Lütfen giriş bilgilerini doldur"
+    },
+    "register": {
+      "firstLabel": "Ad",
+      "firstPlaceholder": "first_name",
+      "lastLabel": "Soyad",
+      "lastPlaceholder": "last_name",
+      "emailLabel": "E-posta",
+      "emailPlaceholder": "email",
+      "passLabel": "Şifre",
+      "passPlaceholder": "••••••••",
+      "submit": "Kayıt Ol",
+      "toastRequired": "Tüm alanlar zorunlu",
+      "toastExists": "Bu e-posta zaten kayıtlı",
+      "toastSuccess": "Kayıt işleminiz başarıyla tamamlandı! Artık giriş yapabilirsiniz.",
+      "loading": "Kayıt yapılıyor..."
+    },
+    "or": "veya",
+    "google": {
+      "login": "Google ile Giriş Yap",
+      "register": "Google ile Kayıt Ol",
+      "loading": "Google ile giriş yapılıyor...",
+      "success": "Google ile giriş başarılı!"
+    }
+  },
+  "notFound": {
+    "badgeCode": "Hata 404",
+    "badgeSlug": "/sayfa-bulunamadı",
+    "title": "Kaybolduk!",
+    "desc": "Aradığınız sayfa bulunamadı veya taşınmış olabilir. URL:",
+    "backHome": "Ana Sayfaya Dön"
+  },
+  "feedbackPage": {
+    "title": "Geri Bildirim",
+    "desc": "Hatalı sınıflandırmaları burada bildirin. Çok fazla geri bildirim gönderen kullanıcılar bloklanabilir.",
+    "placeholder": "Hatalı sınıflandırmayı açıklayın, mümkünse metni ekleyin...",
+    "send": "Gönder",
+    "note": "Not: Bu bir yer tutucudur. Geri bildirim gönderimi ve oran sınırları entegrasyonu eklenecek."
+  },
+  "forgot": {
+    "title": "Şifremi Unuttum",
+    "emailLabel": "E-posta",
+    "emailPlaceholder": "email",
+    "submit": "Sıfırlama E-postası Gönder",
+    "demoTextPrefix": "Demo: E-posta yerine doğrudan",
+    "demoLinkText": "/reset",
+    "demoTextSuffix": "sayfasına gidebilirsiniz.",
+    "toastNotFound": "E-posta bulunamadı",
+    "toastSent": "Şifre sıfırlama bağlantısı e-postanıza gönderildi (demo)",
+    "toastError": "İşlem sırasında hata oluştu",
+    "emailRequired": "Lütfen e-posta adresinizi girin",
+    "backToLogin": "Giriş sayfasına dön",
+    "loginLink": "Giriş bağlantısı"
+  },
+  "paymentConfirm": {
+    "title": "Ödeme Onayı",
+    "desc": "Satın alma işlemini tamamlamadan önce aşağıdaki bilgileri kontrol edin.",
+    "steps": {
+      "plan": "Plan Seçimi",
+      "payment": "Ödeme",
+      "confirm": "Onay"
+    },
+    "orderSummary": "Sipariş Özeti",
+    "labels": {
+      "plan": "Plan:",
+      "amount": "Tutar:",
+      "tokens": "Token:",
+      "days": "Süre:",
+      "daysSuffix": "gün"
+    },
+    "secureLine": "Güvenli ödeme • Şifrelenmiş bağlantı • İade garantisi (demo)",
+    "methodTitle": "Ödeme Yöntemi",
+    "iyzico": {
+      "name": "iyzico",
+      "selected": "Seçili",
+      "desc": "Bölgesel ödeme, hızlı onay (demo)."
+    },
+    "stripe": {
+      "name": "Stripe",
+      "selected": "Seçili",
+      "desc": "Global ödeme ağı (demo)."
+    },
+    "acceptPrivacy": "Gizlilik Politikasını kabul ediyorum",
+    "privacyLink": "(Gizlilik Politikası)",
+    "tls": "TLS 1.3 • PCI-DSS (demo)",
+    "confirm": "Ödemeyi Onayla",
+    "confirmTitle": "Devam için gizlilik politikasını kabul edin",
+    "cancel": "Vazgeç",
+    "demoBanner": "Demo ortamı — gerçek ödeme alınmaz",
+    "toastPrivacyAccepted": "Gizlilik politikası kabul edildi",
+    "toastPaid": "Ödeme onaylandı"
+  },
+  "privacyPage": {
+    "title": "Gizlilik Politikası",
+    "desc": "Verilerinizi nasıl işlediğimizi ve koruduğumuzu açıklıyoruz.",
+    "summaryTitle": "Özet",
+    "summary": {
+      "p1": "Hesap ve profil bilgileriniz güvenle saklanır.",
+      "p2": "Metin analizleri ve API kullanım verileri hizmet kalitesini artırmak için kullanılır.",
+      "p3": "Ödeme verileri PayTR/iyzico gibi güvenli sağlayıcılar üzerinden işlenir.",
+      "p4": "Kanunlar ve sözleşmeler kapsamında gerekli haller dışında üçüncü kişilerle paylaşılmaz."
+    },
+    "rightsTitle": "Haklarınız",
+    "rights": {
+      "p1": "KVKK/GDPR kapsamında erişim, düzeltme ve silme haklarına sahipsiniz.",
+      "p2": "İletişim: privacy@nobadwords.dev"
+    }
+  },
+  "reset": {
+    "title": "Şifre Sıfırla",
+    "newPassLabel": "Yeni Şifre",
+    "confirmPassLabel": "Şifre (Tekrar)",
+    "placeholder": "••••••••",
+    "submit": "Şifreyi Güncelle",
+    "toastInvalidLink": "Geçersiz bağlantı",
+    "toastMismatch": "Şifreler uyuşmuyor",
+    "toastUserMissing": "Kullanıcı bulunamadı",
+    "toastSuccess": "Şifreniz güncellendi",
+    "toastError": "İşlem sırasında hata oluştu"
+  },
+  "profile": {
+    "title": "Profil",
+    "pleaseLogin": "Devam etmek için lütfen giriş yapın.",
+    "updated": "Profil güncellendi",
+    "updateError": "Güncelleme sırasında hata oluştu",
+    "summary": {
+      "plan": "Plan:",
+      "remaining": "Kalan:"
+    },
+    "plan": {
+      "freeDemo": "Ücretsiz Demo"
+    },
+    "labels": {
+      "first": "Ad",
+      "last": "Soyad",
+      "email": "E-posta",
+      "plan": "Plan",
+      "remainingTokens": "Kalan Token"
+    },
+    "personal": {
+      "title": "Kişisel Bilgiler",
+      "edit": "Düzelt"
+    },
+    "password": {
+      "new": "Yeni Şifre",
+      "confirm": "Şifre (Tekrar)",
+      "save": "Kaydet",
+      "cancel": "Vazgeç",
+      "mismatch": "Şifreler uyuşmuyor"
+    },
+    "keys": {
+      "title": "API Anahtarları",
+      "info": "Uygulamalarınızda kullanmak için yeni bir API anahtarı oluşturun.",
+      "new": "Yeni API Anahtarı",
+      "empty": "Henüz anahtar yok.",
+      "copy": "Kopyala",
+      "copied": "Anahtar kopyalandı"
+    },
+    "purchases": {
+      "title": "Satın Alınan Planlar",
+      "desc": "Satın aldığınız planlar burada listelenecek (ad, token, gün, fiyat ve tarih ile). Ödeme sonrası otomatik eklenecektir.",
+      "empty": "Satın alma bulunamadı"
+    },
+    "payments": {
+      "title": "Ödeme Geçmişi",
+      "demoAdd": "Demo Ekle",
+      "clear": "Temizle",
+      "empty": "Henüz ödeme kaydı yok.",
+      "paymentWord": "Ödeme",
+      "labels": {
+        "user": "Kullanıcı",
+        "plan": "Plan",
+        "amount": "Tutar",
+        "txnId": "Txn ID"
+      },
+      "copy": "Kopyala",
+      "copyToast": "Kopyalandı",
+      "unknown": "bilinmiyor",
+      "state": {
+        "pending": "Beklemede",
+        "paid": "Ödendi",
+        "canceled": "İptal edildi",
+        "refunded": "İade edildi",
+        "failed": "Başarısız"
+      },
+      "toastSeeded": "Demo ödemeler eklendi",
+      "toastSeedError": "Demo verisi eklenemedi",
+      "toastCleared": "Ödeme geçmişi temizlendi"
+    },
+    "logout": "Çıkış Yap"
+  },
+  "privacyModal": {
+    "title": "Gizliliğiniz Bizim Önceliğimiz",
+    "p1": "NoBadWords olarak verilerinizin güvenliği ve gizliliği bizim için çok önemli.",
+    "p2": "Hesap bilgileriniz ve profiliniz güvende.",
+    "p3": "Metin analizleriniz ve API kullanım verileriniz yalnızca hizmet amaçlı kullanılır.",
+    "p4": "Ödeme bilgileriniz güvenli ödeme sağlayıcılarımız (PayTR, iyzico) aracılığıyla işlenir.",
+    "p5": "Platformu kullanarak ve plan satın alarak bu Gizlilik Politikası’nı ve Kullanım Şartları’nı kabul etmiş olursunuz.",
+    "link": "Detaylı Gizlilik Politikası",
+    "cancel": "İptal",
+    "accept": "Kabul Ediyorum"
+  },
+  "activation": {
+    "checkEmailTitle": "Hesabınızı Aktifleştirin",
+    "checkEmailDesc": "Hizmetlerimizi kullanmak ve gerekli tokenleri almak için lütfen e-posta adresinizi aktifleştirin.",
+    "cantFindEmail": "E-postayı bulamıyor musunuz?",
+    "checkSpam": "Spam veya gereksiz posta klasörünü kontrol edin.",
+    "checkEmail": "Doğru e-posta adresini kullandığınızdan emin olun.",
+    "waitFew": "E-posta gelmesi birkaç dakika sürebilir.",
+    "sendEmail": "Aktivasyon e-postasını gönder",
+    "sendingEmail": "E-posta gönderiliyor",
+    "home": "Ana Sayfa",
+    "errorGeneral": "Bir hata oluştu. Lütfen tekrar deneyin.",
+    "errorNetwork": "Ağ hatası. Lütfen internet bağlantınızı kontrol edin.",
+    "errorSend": "E-posta gönderilirken bir hata oluştu. Tekrar deneyin."
+  },
+  "cookieConsent": {
+    "title": "Gizliliğinize Değer Veriyoruz",
+    "description": "Sitemizin güvenle çalışması ve size daha iyi bir deneyim sunulması için çerezleri kullanıyoruz. Seçimleriniz tamamen size aittir.",
+    "moreInfo": "Daha fazla bilgi için",
+    "privacyPolicy": "Çerez Politikamızı",
+    "moreInfoSuffix": "inceleyebilirsiniz.",
+    "acceptAll": "Kabul Et & Devam Et",
+    "essential": "Sadece Gerekli",
+    "privacyModal": {
+      "title": "Çerez Politikası",
+      "intro": "Web sitemizi ziyaret ettiğinizde, sizin için en güvenli, hızlı ve kişiselleştirilmiş deneyimi sunabilmek amacıyla çerezler ve benzeri teknolojiler kullanıyoruz. Çerezler, sitenin doğru çalışmasını sağlamak, kullanıcı tercihlerini hatırlamak, güvenliği artırmak ve site kullanım verilerini analiz etmek için kritik bir rol oynar. Bu çerezler sayesinde web sitemizi her ziyaretinizde optimize edilmiş bir şekilde kullanabilirsiniz. Aşağıda kullandığımız çerez türleri, amaçları, kullanım süreleri ve yasal dayanakları detaylı olarak açıklanmıştır.",
+      "essential": {
+        "title": "🛡️ Kesinlikle Gerekli Çerezler",
+        "description": "Bu çerezler, web sitemizin temel işlevlerinin sorunsuz çalışabilmesi ve güvenliğin sağlanması için zorunludur. Kullanıcının tercihlerini hatırlamak veya kişiselleştirilmiş içerik sunmak için kullanılmazlar; tamamen sistemin güvenliği ve işlevselliği içindir. Eğer bu çerezler devre dışı bırakılırsa, bazı bölümler çalışmayabilir veya siteyi kullanmak mümkün olmayabilir.",
+        "items": [
+          {
+            "title": "IP Adresi ve Cihaz Parmak İzi:",
+            "description": "Web sitemize yapılan her ziyarette cihazınızın benzersiz bilgileri ve IP adresiniz anonim olarak kaydedilir. Bu veriler, kötü niyetli botlar, otomatik saldırılar veya spam girişimlerinden korunmamızı sağlar. Veriler, yalnızca güvenlik amacıyla kullanılır ve kişisel olarak tanımlanamaz."
+          },
+          {
+            "title": "Oturum Yönetimi:",
+            "description": "Kullanıcı girişleri ve oturum bilgilerinizin güvenli bir şekilde yönetilmesini sağlar. Böylece hesabınızın güvenliği korunur ve doğru işlemler yapılır."
+          }
+        ]
+      },
+      "analytics": {
+        "title": "📊 Analitik Çerezler",
+        "description": "Analitik çerezler, site kullanımını ve ziyaretçi davranışlarını anlamamıza yardımcı olur. Bu çerezler sayesinde hangi sayfaların daha çok ziyaret edildiğini, kullanıcıların hangi özellikleri kullandığını ve sitenin hangi alanlarının geliştirilmesi gerektiğini analiz edebiliriz. Analitik çerezler isteğe bağlıdır ve kabul etmezseniz, site yine çalışır ancak kullanım verileri toplanmaz.",
+        "items": [
+          {
+            "title": "Sayfa Ziyaret Analizi:",
+            "description": "Hangi sayfaların ziyaret edildiğini ve kullanıcı etkileşimini takip eder. Bu sayede içerik ve deneyim sürekli iyileştirilir."
+          },
+          {
+            "title": "Kullanıcı Davranışları:",
+            "description": "Kullanıcıların sitede hangi yolları izlediğini ve hangi özellikleri kullandığını anonim olarak izler. Bu bilgiler, performans optimizasyonu ve kullanıcı deneyimini geliştirmek için kullanılır."
+          }
+        ]
+      },
+      "functional": {
+        "title": "🎨 Fonksiyonel ve Tercih Çerezleri",
+        "description": "Fonksiyonel çerezler, kullanıcı deneyimini kişiselleştirmek için kullanılır. Örneğin, hangi dilde içerik görüntülemek istediğiniz veya sitenin hangi görsel modda (koyu/açık) açılacağını hatırlayabiliriz. Bu çerezleri kabul etmek isteğe bağlıdır; kabul etmezseniz site yine çalışır ancak tercihlerinizi tekrar belirtmeniz gerekir.",
+        "items": [
+          {
+            "title": "Dil ve Tema Tercihleri:",
+            "description": "Sitemizi hangi dilde ve hangi tema modunda kullanmak istediğinizi hatırlar. Bu sayede sonraki ziyaretinizde aynı deneyim otomatik olarak sağlanır."
+          },
+          {
+            "title": "Kullanıcı Arayüzü Özelleştirmeleri:",
+            "description": "Sayfa düzeni, yazı tipi boyutu ve diğer görsel tercihleriniz siteye kaydedilir. Böylece ziyaretçiler kendilerine en uygun görünümü deneyimleyebilir."
+          }
+        ]
+      },
+      "legal": {
+        "title": "⚖️ Yasal Uyum ve KVKK/GDPR",
+        "description": "Sitemizde kullanılan tüm çerezler, Türkiye'deki KVKK ve Avrupa'daki GDPR mevzuatına uygun şekilde yönetilir. Kullanıcı verileri anonim veya şifrelenmiş olarak işlenir, yasal dayanak belirtilir ve kullanıcıların hakları korunur. Toplanan veriler yalnızca izin verilen amaçlar için kullanılacaktır ve üçüncü taraflarla paylaşım tamamen yasal çerçevede yapılır."
+      },
+      "thirdParty": {
+        "title": "🔒 Gizli Üçüncü Taraf Onayı",
+        "description": "Çerez kullanımını kabul ederek, bazı bilgilerinizin (örneğin e-posta adresinizin) güvenli ve şifrelenmiş biçimde iş ortaklarımızla paylaşılmasına izin vermiş olursunuz. Bu paylaşım yalnızca site deneyiminizi geliştirmek, analiz yapmak ve size özel içerik sunmak için kullanılır. Bu onay, kullanıcı deneyimini etkilemeden modalın ortasında doğal bir şekilde yer alır ve yasal olarak geçerlidir."
+      },
+      "control": {
+        "title": "⚙️ Seçimleriniz ve Kontrol",
+        "description": "Tüm çerez seçimleri tamamen sizin kontrolünüzdedir. \"Kabul Et & Devam Et\" butonuna tıklayarak zorunlu ve isteğe bağlı tüm çerezleri kabul etmiş olursunuz. \"Sadece Gerekli\" seçeneğini tercih ederseniz yalnızca sitenin çalışması için zorunlu olan çerezler kullanılır. Bu sayede hem güvenliğiniz korunur hem de siteyi temel işlevlerle kullanabilirsiniz."
+      },
+      "footer": "Bu çerez politikası en son Eylül 2025 tarihinde güncellenmiştir. Politika, web sitemizin güvenli ve sorunsuz çalışmasını sağlamak amacıyla düzenli olarak gözden geçirilir. Kullanıcılar, siteyi kullanmaya devam ettiklerinde bu politikayı kabul etmiş sayılırlar. Gizlilik ve veri güvenliği, her zaman öncelikli konularımız arasında yer almaktadır.",
+      "buttons": {
+        "essentialOnly": "Sadece Gerekli Olanları Onayla",
+        "acceptAll": "Tümünü Kabul Et"
+      }
+    }
+  },
+  "backend": {
+    "auth": {
+      "emailRequired": "E-posta alanı zorunludur",
+      "emailExists": "Bu e-posta zaten kayıtlı",
+      "emailInvalid": "Geçerli bir e-posta giriniz",
+      "emailBlank": "E-posta boş bırakılamaz",
+      "emailTooShort": "E-posta en az 6 karakter olmalı",
+      "emailTooLong": "E-posta en fazla 128 karakter olmalı",
+      "passwordRequired": "Şifre alanı zorunludur",
+      "passwordTooShort": "Şifre en az 8 karakter olmalı",
+      "passwordTooLong": "Şifre en fazla 32 karakter olmalı",
+      "passwordBlank": "Şifre boş bırakılamaz",
+      "firstNameRequired": "Ad alanı zorunludur",
+      "lastNameRequired": "Soyad alanı zorunludur",
+      "firstNameBlank": "Ad boş bırakılamaz",
+      "lastNameBlank": "Soyad boş bırakılamaz",
+      "generalMaxLength": "Bu alan en fazla 32 karakter olmalı",
+      "generalError": "Genel bir hata oluştu",
+      "temp": {
+        "notAcceptCookies": "İşlem tamamlanamadı. Lütfen tarayıcınızın geçici hafızasını (cache) temizleyin ve çerezleri kabul ettiğinizden emin olun. Sorun devam ederse, destek ekibimize HATA KODU [COOK-001] ile başvurun.",
+        "infoNotRetrieved": "Bazı bilgiler alınamadı, lütfen tekrar deneyin.",
+        "blocked": "Cihazınız {{blocked_until}} tarihine kadar geçici olarak engellendi.",
+        "tempNotFound": "Beklenmedik bir hata oluştu. Lütfen tarayıcınızın geçici hafızasını (cache) temizleyin ve çerezleri kabul ettiğinizden emin olun. Sorun devam ederse, destek ekibimize HATA KODU [TEMP-011] ile başvurun.",
+        "noInput": "Kullanıcı bilgisi sağlanmadı. Hata kodu: TEMP-012"
+      },
+      "login": {
+        "invalidCredentials": "Girdiğiniz bilgilerle eşleşen bir hesap bulunamadı."
+      },
+      "register": {
+        "registrationError": "Kayıt işlemi sırasında bir hata oluştu (Hata Kodu: REG-001). Tarayıcınızın geçici hafızasını (cache) temizleyin ve sorun devam ederse destek ekibimizle iletişime geçin.",
+        "credentialNotRetrieved": "İşlem için gereken bilgiler hazır değil, lütfen tekrar deneyin. (Hata Kodu: CRED-001)",
+        "googleRegistrationError": "Google ile kayıt sırasında bir hata oluştu. Lütfen normal e-posta ve şifre ile kayıt olun.",
+        "freeTrialLimitReached": "Bu cihazda fazla deneme hesabı kullanıldı. Kötüye kullanımı önlemek için bu sınırı koyduk. Eğer bunun bir hata olduğunu düşünüyorsanız, lütfen bizimle iletişime geçin. (İstek ID: ACC-001)"
+      },
+      "logout": {
+        "logoutSuccess": "Başarıyla çıkış yapıldı.",
+        "refreshTokenRequired": "Çıkış işlemi için gerekli bilgiler eksik olduğundan yapılamadı. Hata kodu: ERR-LOGOUT-01",
+        "blacklistError": "Çıkış işlemi sırasında bir hata oluştu. Hata kodu: ERR-LOGOUT-02",
+        "invalidOrExpiredToken": "Oturum geçersiz veya süresi dolmuş. Hata kodu: ERR-LOGOUT-03"
+      }
+    },
+    "activation": {
+      "activationEmailAlreadySent": "Aktivasyon e-postası zaten gönderildi. Lütfen bekleyin.",
+      "activationEmailSent": "Aktivasyon e-postası gönderildi.",
+      "unexpectedError": "Beklenmedik bir hata oluştu.",
+      "invalidEmailOrCode": "Geçersiz e-posta veya kod. Hata kodu: ACT-101",
+      "accountAlreadyActivated": "Hesabınız zaten aktifleştirilmiş. Hata kodu: ACT-102",
+      "invalidOrExpiredCode": "Kod geçersiz veya süresi dolmuş. Hata kodu: ACT-103",
+      "accountActivatedSuccess": "Hesabınız başarıyla aktifleştirildi. Artık giriş yapabilirsiniz.",
+      "freePlanNotFound": "Ücretsiz plan bulunamadı. Lütfen destek ekibiyle iletişime geçin. Hata kodu: ACT-104",
+      "freePlanAssignFailed": "Ücretsiz plan atanamadı, ancak hesabınız aktifleştirildi. Hata kodu: ACT-105"
+    },
+    "forgot": {
+      "passwordResetSent": "Bu e-posta adresi kayıtlıysa, şifre sıfırlama bağlantısı gönderildi.",
+      "passwordResetTooSoon": "Şifre sıfırlama bağlantısı çok yakın bir süre önce gönderildi. Lütfen birkaç dakika sonra tekrar deneyin."
+    },
+    "resetPassword": {
+      "invalidOrExpired": "Geçersiz veya süresi dolmuş şifre sıfırlama linki.",
+      "passwordsDoNotMatch": "Girilen şifreler eşleşmiyor.",
+      "success": "Şifreniz başarıyla sıfırlandı."
+    },
+    "updateUser": {
+      "passwordLength": "Şifre 8-32 karakter arasında olmalıdır.",
+      "confirmPasswordRequired": "Bu alan gereklidir.",
+      "passwordsDoNotMatch": "Girilen şifreler eşleşmiyor.",
+      "success": "Kullanıcı bilgileri başarıyla güncellendi."
+    },
+    "deleteUser": {
+      "cannotDeleteOwn": "Kendi hesabınızı silemezsiniz.",
+      "deletedSuccessfully": "Hesabınız başarıyla silindi."
+    },
+    "getToken": {
+      "notAcceptCookies": "İşlem tamamlanamadı. Lütfen tarayıcınızın geçici hafızasını (cache) temizleyin ve çerezleri kabul ettiğinizden emin olun. Sorun devam ederse, destek ekibimize HATA KODU [COOK-011] ile başvurun."
+    },
+    "classify": {
+      "textRequired": "Metin gereklidir.",
+      "logIn": "Yeterli token yok. Devam etmek için giriş yapın.",
+      "upgradePlan": "Yeterli token yok. Devam etmek için planınızı yükseltin.",
+      "activateEmail": "Yeterli token yok. Devam etmek için e-posta hesabınızı aktifleştirin."
+    },
+    "feedback": {
+      "userNotFound": "Kullanıcı bulunamadı.",
+      "feedbackBanned": "Geri bildirim gönderme hakkınız geçici olarak engellendi. {{ban_end}} tarihine kadar bekleyin.",
+      "feedbackLimit": "Günlük geri bildirim sınırına ulaştınız. Yarın tekrar deneyin.",
+      "inputNotFound": "Girdi bulunamadı.",
+      "feedbackAlreadySubmitted": "Bu girdi için daha önce geri bildirim gönderdiniz.",
+      "feedbackSubmitted": "Geri bildiriminiz başarıyla gönderildi."
+    },
+    "contact": {
+      "tempNotFound": "Beklenmedik bir hata oluştu. Tarayıcınızın önbelleğini temizleyin ve çerezleri kabul ettiğinizden emin olun. Sorun devam ederse, destek ekibimize HATA KODU [TEMP-110] ile başvurun.",
+      "fullNameEmailRequired": "Mesaj gönderebilmek için 'Ad Soyad' ve 'E-Posta' alanları doldurulmalıdır.",
+      "contactCreated": "Mesajınız başarıyla gönderildi.",
+      "contactLimit": "Günlük iletişim mesajı gönderme sınırına ulaştınız. Lütfen yarın tekrar deneyin."
+    },
+    "RequestLimit": "Çok fazla istek gönderildiğinden dolayı kısıtlanma devreye girdi. Lütfen {{seconds}} saniye sonra tekrar deneyin.",
+    "plans": {
+      "planRequired": "Bir plan seçmeniz gerekiyor.",
+      "planNotFound": "Seçilen plan bulunamadı.",
+      "tokenNotSupported": "Seçilen plan API token desteğine sahip değil.",
+      "planPurchased": "Plan '{{plan_name}}' başarıyla satın alındı.",
+      "apiTokenGenerated": "Plan '{{plan_name}}' üzerinden API token başarıyla oluşturuldu."
+    }
+  }
+}

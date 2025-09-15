@@ -1,0 +1,804 @@
+{
+  "nav": {
+    "home": "Home",
+    "classify": "Classify",
+    "plans": "Plans",
+    "integration": "Integration",
+    "history": "History",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "title": {
+    "home": "Home",
+    "classify": "Classify",
+    "plans": "Plans",
+    "history": "History",
+    "integration": "Integration",
+    "feedback": "Feedback",
+    "auth": "Login/Register",
+    "forgot": "Forgot Password",
+    "reset": "Reset Password",
+    "activation": "Account Activation",
+    "profile": "Profile",
+    "about": "About Us",
+    "contact": "Contact",
+    "payment/confirm": "Payment Confirmation",
+    "privacy": "Privacy Policy",
+    "verify-email": "Verify Email",
+    "notfound": "Page Not Found"
+  },
+  "common": {
+    "token": "Token",
+    "themeToggleAria": "Toggle theme",
+    "pricing": "Pricing",
+    "profile": "Profile",
+    "copyCode": "Copy Code",
+    "apiUsage": "Use with API",
+    "freeStart": "Start for free",
+    "tryNow": "Try Now",
+    "viewPlans": "View Plans",
+    "login": "Login",
+    "loginRegister": "Login / Sign Up",
+    "startAnalysis": "Start Analysis",
+    "activateTitle": "Confirm your email",
+    "activateDesc": "Please activate your email to unlock full features (demo).",
+    "activateNow": "Activate",
+    "activated": "Activated",
+    "loading": "Loading",
+    "notFound": "Not found"
+  },
+  "verify": {
+    "title": "Verify your email",
+    "desc": "We sent a 6‑digit code to: {{email}}",
+    "codeLabel": "Enter verification code",
+    "submit": "Verify",
+    "resend": "Resend code",
+    "sent": "Verification code sent",
+    "invalid": "Invalid code",
+    "success": "Email verified",
+    "congratsTitle": "Congratulations!",
+    "congratsDesc": "Your email is verified. Enjoy your gift — welcome aboard!",
+    "continue": "Continue",
+    "demoCode": "Demo code: {{code}}",
+    "sendError": "Verification could not be sent"
+  },
+  "hero": {
+    "badge": "AI-powered toxicity detection",
+    "title": "Moderate your texts safely",
+    "desc": "List toxic words in short messages, get 1/0 result for longer texts. Use from the panel or via API.",
+    "limitInfo": "75 tokens before login, 1000 per day after login.",
+    "perks": [
+      "99.9% Uptime",
+      "Integration in minutes",
+      "GDPR compliant",
+      "Real-time"
+    ]
+  },
+  "features": {
+    "title": "Features",
+    "description": "The core features of our platform are designed to simplify user experience and enable you to create content efficiently.",
+    "secureModeration": {
+      "title": "Safe Moderation",
+      "desc": "Catch toxic content with AI + dictionary-based algorithm. Continuous improvement with feedback."
+    },
+    "easyIntegration": {
+      "title": "Easy Integration",
+      "desc": "Integrate into your apps in minutes with an API key. Token-based usage and limits."
+    },
+    "historyAnalytics": {
+      "title": "History & Analytics",
+      "desc": "View and delete previous analyses, report misclassifications."
+    }
+  },
+  "how": {
+    "title": "How It Works",
+    "steps": [
+      {
+        "title": "Send Text",
+        "desc": "Submit your text from the panel or via API"
+      },
+      {
+        "title": "AI + Dictionary",
+        "desc": "Hybrid model performs toxicity detection"
+      },
+      {
+        "title": "Get Result",
+        "desc": "Words for short text, 1/0 + ratio for long text"
+      }
+    ]
+  },
+  "languages": {
+    "nameTr": "Turkish",
+    "nameAr": "Arabic",
+    "nameEn": "English",
+    "flagTr": "🇹🇷",
+    "flagAr": "🇮🇶",
+    "flagEn": "🇺🇸",
+    "full": "Full Support",
+    "partial": "Partial Support",
+    "fullDescription": "Filtering with high accuracy",
+    "partialDescription": "Basic filtering features",
+    "exampleAr": "مثال: 'هذا نص جميل جدًا' ← نظيف",
+    "exampleTr": "Örnek: 'Bu çok güzel bir metin' → Temiz",
+    "exampleEn": "Example: 'This is a very nice text' → Clean",
+    "highAccuracy": "High Accuracy",
+    "fastProcessing": "Fast Processing",
+    "comprehensiveDictionary": "Comprehensive Dictionary",
+    "basicFiltering": "Basic Filtering",
+    "continuousImprovement": "Continuous Improvement",
+    "title": "Multilingual Support",
+    "subtitle": "Powerful Filtering in Three Languages",
+    "description": "Our AI model provides full support for Turkish and Arabic, and partial support for English, serving a wide user base."
+  },
+  "testimonials": {
+    "title": "What Our Users Say",
+    "items": [
+      "Toxic content dropped by 80% in our community app.",
+      "API integration took 15 minutes.",
+      "Support team is awesome."
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "q1": "How do token limits work?",
+    "a1": "75 tokens before login, 1000 daily after login. Buy a plan to add more tokens.",
+    "q2": "How are payments processed?",
+    "a2": "After secure payment via iyzico, your API key and tokens are activated.",
+    "q3": "What result is returned?",
+    "a3": "For short text: list of toxic words. For long text: 1/0 and toxic_ratio percentage."
+  },
+  "cta": {
+    "title": "Start for free",
+    "desc": "1,000 tokens with Free Demo. Upgrade anytime or purchase extra tokens."
+  },
+  "code": {
+    "exampleText": "example text"
+  },
+  "plans": {
+    "badge": "Flexible plans",
+    "title": "Plans & Pricing",
+    "subtitle": "Choose token and duration options that fit your needs. Upgrade anytime or buy extra tokens.",
+    "recommended": "Recommended",
+    "perPackage": "/ package",
+    "token": "token",
+    "days": "days",
+    "buy": "Buy Now",
+    "paid": "Paid",
+    "unpaid": "Unpaid",
+    "active": "Active",
+    "inactive": "Inactive",
+    "features": {
+      "api": "API access",
+      "history": "View history",
+      "supportStandard": "Standard support",
+      "feedbackPriority": "Feedback priority",
+      "securityAdvanced": "Advanced security",
+      "supportPriority": "Priority support",
+      "dedicatedManager": "Dedicated account manager",
+      "customSLA": "Custom SLA",
+      "limit": "{{n}} tokens"
+    },
+    "items": {
+      "free": {
+        "desc": "Ideal for getting started"
+      },
+      "starter": {
+        "desc": "For hobby and small projects"
+      },
+      "pro": {
+        "desc": "For growing teams"
+      },
+      "enterprise": {
+        "desc": "For enterprise needs"
+      }
+    }
+  },
+  "classify": {
+    "title": "Text Analysis (Classify)",
+    "desc": "Lists detected toxic words in short messages. For long texts returns 1 (toxic) or 0 (non-toxic).",
+    "pasteTitle": "Paste your text",
+    "placeholder": "Enter text here...",
+    "dailyLimitLabel": "Daily limit",
+    "usedLabel": "Used",
+    "remainingLabel": "Remaining",
+    "consume": "This consumed about ~ {{n}} tokens",
+    "dailyUsage": "Daily usage",
+    "analyzing": "Analyzing...",
+    "analyze": "Analyze",
+    "limitExceeded": "Daily limit exceeded. Shorten the text or sign in.",
+    "resultTitle": "Result",
+    "toxic": "Toxic",
+    "nonToxic": "Non-toxic",
+    "toxicRatioViz": "Toxicity ratio visualization",
+    "toxicWords": "Toxic words",
+    "analysisError": "An error occurred during analysis",
+    "networkError": "Network error",
+    "fields": {
+      "predicted_class": "Predicted Class",
+      "toxic_ratio": "Toxic Ratio",
+      "tokens": "Tokens",
+      "is_temp": "Is Temporary",
+      "usage": "Token Usage",
+      "used": "Used",
+      "remaining": "Remaining"
+    }
+  },
+  "feedback": {
+    "toastSuccess": "Thanks! Your feedback has been received.",
+    "toastError": "Could not save feedback",
+    "ask": "Would you like to leave feedback about the result?",
+    "send": "Send",
+    "prompt": "What seems wrong? Please explain briefly.",
+    "placeholder": "Ex: It should not be flagged as 'hate'...",
+    "cancel": "Cancel",
+    "feedbackLimit": "You have reached the daily feedback limit. Try again tomorrow.",
+    "sending": "Sending feedback"
+  },
+  "integration": {
+    "title": "Integration",
+    "desc": "Connect NoBadWords to your app using your API key. Create a key under Profile > API Keys and follow the examples below.",
+    "basics": {
+      "title": "Basics",
+      "baseUrl": "Base URL",
+      "endpoint": "Endpoint",
+      "auth": "Auth",
+      "body": "Body"
+    },
+    "examples": {
+      "title": "Example Usage"
+    },
+    "tabs": {
+      "curl": "cURL",
+      "node": "Node.js (fetch)",
+      "python": "Python (requests)"
+    },
+    "response": {
+      "title": "Sample Response"
+    },
+    "errors": {
+      "title": "Error Handling",
+      "unauthorized": "401 Unauthorized: Missing/invalid API key.",
+      "tooMany": "429 Too Many Requests: Your token limit is exhausted.",
+      "badRequest": "400 Bad Request: Invalid JSON or empty text."
+    },
+    "security": {
+      "title": "Security Recommendations",
+      "noClientStore": "Do not store API keys in client code; proxy from the server side.",
+      "rotateKeys": "Rotate keys regularly.",
+      "rateLimit": "Apply rate limiting and IP restrictions."
+    }
+  },
+  "history": {
+    "title": "History",
+    "desc": "Your previous analyses will be listed here. Use the filters below to search.",
+    "searchLabel": "Search",
+    "searchPlaceholder": "search in text...",
+    "startLabel": "Start",
+    "endLabel": "End",
+    "predLabel": "Prediction",
+    "selectPlaceholder": "Select",
+    "predAll": "All",
+    "predToxic": "Toxic (1)",
+    "predNonToxic": "Non-toxic (0)",
+    "minRatioLabel": "Min. toxic_ratio (%)",
+    "minRatioPlaceholder": "e.g. 80",
+    "onlyWithWords": "Only entries with toxic_words",
+    "reset": "Reset",
+    "filter": "Filter",
+    "empty": "No entries yet. After you analyze, the history will appear here.",
+    "table": {
+      "date": "Date",
+      "predicted_class": "Predicted Class",
+      "toxic_ratio": "Toxic Ratio",
+      "tokens": "Tokens",
+      "toxic_words": "Toxic Words",
+      "text": "Text"
+    }
+  },
+  "about": {
+    "title": "About",
+    "intro": "NoBadWords offers modern toxicity detection to keep your communities and apps safe. Fast, reliable, and developer‑friendly.",
+    "badge": "Badge",
+    "floating": [
+      "AI",
+      "No Profanity",
+      "Safe",
+      "No Toxic Content"
+    ],
+    "robotBubble": "Clean content",
+    "stats": {
+      "processed": "Messages Processed",
+      "latency": "Avg Latency",
+      "accuracy": "Accuracy",
+      "uptime": "Uptime"
+    },
+    "features": {
+      "security": {
+        "title": "Security",
+        "desc": "High accuracy with modern techniques"
+      },
+      "community": {
+        "title": "Community",
+        "desc": "Process millions of messages safely"
+      },
+      "success": {
+        "title": "Excellence",
+        "desc": "Performance and scalability"
+      }
+    },
+    "mission": {
+      "title": "Mission",
+      "desc": "Make it easy to build healthier communities by detecting harmful language early.",
+      "items": [
+        "Developer-friendly API",
+        "Fair and transparent metrics",
+        "Continuously improving models"
+      ]
+    },
+    "vision": {
+      "title": "Vision",
+      "desc": "Be a global reference in content safety and make it accessible to everyone.",
+      "items": [
+        "Real-time moderation",
+        "Multilingual coverage",
+        "Scalable infrastructure"
+      ]
+    },
+    "timeline": {
+      "title": "Our Journey",
+      "items": {
+        "2022": "Idea and prototype",
+        "2023": "First beta and integrations",
+        "2024": "Multilingual support and analytics",
+        "2025": "Enterprise plans and SLA"
+      }
+    },
+    "cta": {
+      "title": "Ready to protect your community?",
+      "desc": "Try for free now, upgrade any time."
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Write to us for questions and partnerships. We respond within 24 hours.",
+    "toastSuccess": "Your message has been received. Thank you!",
+    "toastError": "Could not save message",
+    "form": {
+      "title": "Send a Message",
+      "nameLabel": "Full Name",
+      "namePlaceholder": "Your name",
+      "emailLabel": "Email",
+      "emailPlaceholder": "example@mail.com",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Write your message...",
+      "send": "Send"
+    },
+    "info": {
+      "title": "Contact Info",
+      "address": "Istanbul, Turkey",
+      "hours": "Weekdays 09:00 – 18:00"
+    },
+    "support": {
+      "title": "Support",
+      "tech": "Technical",
+      "sales": "Sales",
+      "privacy": "Privacy/GDPR"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "q1": "What is your response time?",
+      "a1": "We typically respond within the same business day.",
+      "q2": "Is there a demo usage limit?",
+      "a2": "75 tokens before login, 1000 daily after login.",
+      "q3": "Enterprise plans?",
+      "a3": "Contact us for custom SLA and security needs."
+    }
+  },
+  "auth": {
+    "title": "Login / Sign Up",
+    "tabs": {
+      "login": "Login",
+      "register": "Sign Up"
+    },
+    "login": {
+      "idLabel": "Username / Email",
+      "idPlaceholder": "username or email",
+      "passLabel": "Password",
+      "passPlaceholder": "••••••••",
+      "submit": "Login",
+      "forgot": "Forgot Password",
+      "toastInvalid": "Invalid credentials",
+      "toastSuccess": "Login successful",
+      "loading": "Iniciando sesión...",
+      "toastRequired": "Please fill in login details"
+    },
+    "register": {
+      "firstLabel": "First Name",
+      "firstPlaceholder": "first_name",
+      "lastLabel": "Last Name",
+      "lastPlaceholder": "last_name",
+      "emailLabel": "Email",
+      "emailPlaceholder": "email",
+      "passLabel": "Password",
+      "passPlaceholder": "••••••••",
+      "submit": "Sign Up",
+      "toastRequired": "All fields are required",
+      "toastExists": "This email is already registered",
+      "toastSuccess": "Registration completed",
+      "loading": "Registrándose..."
+    },
+    "or": "or",
+    "google": {
+      "login": "Login with Google",
+      "register": "Register with Google",
+      "loading": "Logging in with Google...",
+      "success": "Login successful with Google!"
+    }
+  },
+  "notFound": {
+    "badgeCode": "Error 404",
+    "badgeSlug": "/page-not-found",
+    "title": "We’re lost!",
+    "desc": "The page you’re looking for was not found or may have been moved. URL:",
+    "backHome": "Back to Home"
+  },
+  "feedbackPage": {
+    "title": "Feedback",
+    "desc": "Report misclassifications here. Users sending too many reports may be blocked.",
+    "placeholder": "Explain the misclassification, include the text if possible...",
+    "send": "Send",
+    "note": "Note: This is a placeholder. Feedback submission and rate limits will be integrated."
+  },
+  "forgot": {
+    "title": "Forgot Password",
+    "emailLabel": "Email",
+    "emailPlaceholder": "email",
+    "submit": "Send Reset Email",
+    "demoTextPrefix": "Demo: Instead of email, you can go directly to",
+    "demoLinkText": "/reset",
+    "demoTextSuffix": "page.",
+    "toastNotFound": "Email not found",
+    "toastSent": "Password reset link sent to your email",
+    "toastError": "An error occurred during the process",
+    "emailRequired": "Please enter your email",
+    "backToLogin": "Back to login",
+    "loginLink": "Login link"
+  },
+  "paymentConfirm": {
+    "title": "Payment Confirmation",
+    "desc": "Review the details below before completing your purchase.",
+    "steps": {
+      "plan": "Plan Selection",
+      "payment": "Payment",
+      "confirm": "Confirmation"
+    },
+    "orderSummary": "Order Summary",
+    "labels": {
+      "plan": "Plan:",
+      "amount": "Amount:",
+      "tokens": "Tokens:",
+      "days": "Duration:",
+      "daysSuffix": "days"
+    },
+    "secureLine": "Secure payment • Encrypted connection • Money-back guarantee (demo)",
+    "methodTitle": "Payment Method",
+    "iyzico": {
+      "name": "iyzico",
+      "selected": "Selected",
+      "desc": "Regional payments, fast approval (demo)."
+    },
+    "stripe": {
+      "name": "Stripe",
+      "selected": "Selected",
+      "desc": "Global payment network (demo)."
+    },
+    "acceptPrivacy": "I accept the Privacy Policy",
+    "privacyLink": "(Privacy Policy)",
+    "tls": "TLS 1.3 • PCI-DSS (demo)",
+    "confirm": "Confirm Payment",
+    "confirmTitle": "Accept the privacy policy to continue",
+    "cancel": "Cancel",
+    "demoBanner": "Demo environment — no real charges",
+    "toastPrivacyAccepted": "Privacy policy accepted",
+    "toastPaid": "Payment confirmed"
+  },
+  "privacyPage": {
+    "title": "Privacy Policy",
+    "desc": "We explain how we process and protect your data.",
+    "summaryTitle": "Summary",
+    "summary": {
+      "p1": "Your account and profile information is stored securely.",
+      "p2": "Text analyses and API usage data are used to improve service quality.",
+      "p3": "Payment data is processed through secure providers such as PayTR/iyzico.",
+      "p4": "Not shared with third parties except where required by law and agreements."
+    },
+    "rightsTitle": "Your Rights",
+    "rights": {
+      "p1": "Under GDPR you have the right to access, rectify, and delete your data.",
+      "p2": "Contact: privacy@nobadwords.dev"
+    }
+  },
+  "reset": {
+    "title": "Reset Password",
+    "newPassLabel": "New Password",
+    "confirmPassLabel": "Password (Again)",
+    "placeholder": "••••••••",
+    "submit": "Update Password",
+    "toastInvalidLink": "Invalid link",
+    "toastMismatch": "Passwords do not match",
+    "toastUserMissing": "User not found",
+    "toastSuccess": "Your password has been updated",
+    "toastError": "An error occurred during the process"
+  },
+  "profile": {
+    "title": "Profile",
+    "pleaseLogin": "Please sign in to continue.",
+    "updated": "Profile updated",
+    "updateError": "Error during update",
+    "summary": {
+      "plan": "Plan:",
+      "remaining": "Remaining:"
+    },
+    "plan": {
+      "freeDemo": "Free Demo"
+    },
+    "labels": {
+      "first": "First Name",
+      "last": "Last Name",
+      "email": "Email",
+      "plan": "Plan",
+      "remainingTokens": "Remaining Tokens"
+    },
+    "personal": {
+      "title": "Personal Information",
+      "edit": "Edit"
+    },
+    "password": {
+      "new": "New Password",
+      "confirm": "Password (Again)",
+      "save": "Save",
+      "cancel": "Cancel",
+      "mismatch": "Passwords do not match"
+    },
+    "keys": {
+      "title": "API Keys",
+      "info": "Create a new API key to use in your applications.",
+      "new": "New API Key",
+      "empty": "No keys yet.",
+      "copy": "Copy",
+      "copied": "Key copied"
+    },
+    "purchases": {
+      "title": "Purchased Plans",
+      "desc": "Your purchased plans will be listed here (name, tokens, days, price and date). They will be added automatically after payment.",
+      "empty": "No purchases found"
+    },
+    "payments": {
+      "title": "Payment History",
+      "demoAdd": "Add Demo",
+      "clear": "Clear",
+      "empty": "No payment records yet.",
+      "paymentWord": "Payment",
+      "labels": {
+        "user": "User",
+        "plan": "Plan",
+        "amount": "Amount",
+        "txnId": "Txn ID"
+      },
+      "copy": "Copy",
+      "copyToast": "Copied",
+      "unknown": "unknown",
+      "state": {
+        "pending": "Pending",
+        "paid": "Paid",
+        "refunded": "Refunded",
+        "canceled": "Canceled",
+        "failed": "Failed"
+      },
+      "toastSeeded": "Demo payments added",
+      "toastSeedError": "Could not add demo data",
+      "toastCleared": "Payment history cleared"
+    },
+    "logout": "Logout"
+  },
+  "privacyModal": {
+    "title": "Your Privacy is Our Priority",
+    "p1": "At NoBadWords, the security and privacy of your data are very important to us.",
+    "p2": "Your account and profile information is safe.",
+    "p3": "Your text analyses and API usage data are used only for service purposes.",
+    "p4": "Your payment information is processed through our secure payment providers (PayTR, iyzico).",
+    "p5": "By using the platform and purchasing a plan, you accept this Privacy Policy and the Terms of Use.",
+    "link": "Detailed Privacy Policy",
+    "cancel": "Cancel",
+    "accept": "I Accept"
+  },
+  "activation": {
+    "checkEmailTitle": "Activate Your Account",
+    "checkEmailDesc": "To use our services and receive the required tokens, please activate your email address.",
+    "cantFindEmail": "Can't find the email?",
+    "checkSpam": "Check your Spam or Junk folder.",
+    "checkEmail": "Make sure you used the correct email address.",
+    "waitFew": "It may take a few minutes for the email to arrive.",
+    "sendEmail": "Send Activation Email",
+    "sendingEmail": "Sending email",
+    "home": "Home",
+    "errorGeneral": "An error occurred. Please try again.",
+    "errorNetwork": "Network error. Please check your internet connection.",
+    "errorSend": "An error occurred while sending the email. Please try again."
+  },
+  "cookieConsent": {
+    "title": "We Value Your Privacy",
+    "description": "We use cookies to ensure our website works securely and to provide you with a better experience. The choice is entirely yours.",
+    "moreInfo": "For more information, please review our",
+    "privacyPolicy": "Cookie Policy",
+    "moreInfoSuffix": "",
+    "acceptAll": "Accept & Continue",
+    "essential": "Essential Only",
+    "privacyModal": {
+      "title": "Cookie Policy",
+      "intro": "When you visit our website, we use cookies and similar technologies to provide you with the safest, fastest, and most personalized experience. Cookies play a critical role in ensuring the proper functioning of the site, remembering user preferences, enhancing security, and analyzing site usage data. Thanks to these cookies, you can use our website in an optimized manner with each visit. Below, the types of cookies we use, their purposes, usage durations, and legal bases are explained in detail.",
+      "essential": {
+        "title": "🛡️ Strictly Necessary Cookies",
+        "description": "These cookies are essential for the proper functioning of our website's basic features and ensuring security. They are not used to remember user preferences or provide personalized content; they are solely for system security and functionality. If these cookies are disabled, some sections may not work or using the site may not be possible.",
+        "items": [
+          {
+            "title": "IP Address and Device Fingerprint:",
+            "description": "With each visit to our website, your device's unique information and IP address are recorded anonymously. This data helps us protect against malicious bots, automated attacks, or spam attempts. The data is used solely for security purposes and cannot be personally identified."
+          },
+          {
+            "title": "Session Management:",
+            "description": "Ensures secure management of user logins and your session information. This protects your account security and ensures correct operations are performed."
+          }
+        ]
+      },
+      "analytics": {
+        "title": "📊 Analytics Cookies",
+        "description": "Analytics cookies help us understand site usage and visitor behavior. Thanks to these cookies, we can analyze which pages are visited more frequently, which features users use, and which areas of the site need improvement. Analytics cookies are optional, and if you don't accept them, the site will still work but usage data will not be collected.",
+        "items": [
+          {
+            "title": "Page Visit Analysis:",
+            "description": "Tracks which pages are visited and user interactions. This way, content and experience are continuously improved."
+          },
+          {
+            "title": "User Behavior:",
+            "description": "Anonymously tracks which paths users follow on the site and which features they use. This information is used for performance optimization and improving user experience."
+          }
+        ]
+      },
+      "functional": {
+        "title": "🎨 Functional and Preference Cookies",
+        "description": "Functional cookies are used to personalize the user experience. For example, we can remember in which language you want to view content or in which visual mode (dark/light) the site should open. Accepting these cookies is optional; if you don't accept them, the site will still work but you'll need to specify your preferences again.",
+        "items": [
+          {
+            "title": "Language and Theme Preferences:",
+            "description": "Remembers in which language and theme mode you want to use our site. This way, the same experience is automatically provided on your next visit."
+          },
+          {
+            "title": "User Interface Customizations:",
+            "description": "Your preferences for page layout, font size, and other visual elements are saved to the site. This allows visitors to experience the most suitable appearance for them."
+          }
+        ]
+      },
+      "legal": {
+        "title": "⚖️ Legal Compliance and KVKK/GDPR",
+        "description": "All cookies used on our site are managed in compliance with KVKK legislation in Turkey and GDPR in Europe. User data is processed anonymously or encrypted, legal basis is specified, and users' rights are protected. Collected data will only be used for permitted purposes and sharing with third parties is done entirely within the legal framework."
+      },
+      "thirdParty": {
+        "title": "🔒 Hidden Third Party Consent",
+        "description": "By accepting cookie usage, you give permission for some of your information (such as your email address) to be shared with our business partners in a secure and encrypted form. This sharing is used only to improve your site experience, conduct analysis, and provide you with personalized content. This consent is placed naturally in the middle of the modal without affecting the user experience and is legally valid."
+      },
+      "control": {
+        "title": "⚙️ Your Choices and Control",
+        "description": "All cookie choices are entirely under your control. By clicking the \"Accept & Continue\" button, you accept all mandatory and optional cookies. If you prefer the \"Essential Only\" option, only cookies necessary for the site's operation will be used. This way, both your security is protected and you can use the site with basic functions."
+      },
+      "footer": "This cookie policy was last updated in September 2025. The policy is regularly reviewed to ensure the secure and smooth operation of our website. Users are considered to have accepted this policy by continuing to use the site. Privacy and data security are always among our priority issues.",
+      "buttons": {
+        "essentialOnly": "Approve Essential Only",
+        "acceptAll": "Accept All"
+      }
+    }
+  },
+  "backend": {
+    "auth": {
+      "emailRequired": "Email field is required",
+      "emailExists": "This email is already registered",
+      "emailInvalid": "Please enter a valid email",
+      "emailBlank": "Email cannot be left blank",
+      "emailTooShort": "Email must be at least 6 characters long",
+      "emailTooLong": "Email can be at most 128 characters long",
+      "passwordRequired": "Password field is required",
+      "passwordTooShort": "Password must be at least 8 characters long",
+      "passwordTooLong": "Password can be at most 32 characters long",
+      "passwordBlank": "Password cannot be left blank",
+      "firstNameRequired": "First name field is required",
+      "lastNameRequired": "Last name field is required",
+      "firstNameBlank": "First name cannot be left blank",
+      "lastNameBlank": "Last name cannot be left blank",
+      "generalMaxLength": "This field can be at most 32 characters long",
+      "generalError": "A general error occurred",
+      "temp": {
+        "notAcceptCookies": "Action could not be completed. Please clear your browser cache and ensure cookies are accepted. If the issue persists, contact our support team with ERROR CODE [COOK-001].",
+        "infoNotRetrieved": "Some information could not be retrieved, please try again.",
+        "blocked": "Your device is temporarily blocked until {{blocked_until}}.",
+        "tempNotFound": "An unexpected error occurred. Please clear your browser's cache and ensure cookies are accepted. If the issue persists, contact our support team with ERROR CODE [TEMP-011].",
+        "noInput": "No user provided. Error code: TEMP-012"
+      },
+      "login": {
+        "invalidCredentials": "No account found matching the credentials you entered."
+      },
+      "register": {
+        "registrationError": "An error occurred during registration (Error Code: REG-001). Please clear your browser's cache and contact our support team if the issue persists.",
+        "credentialNotRetrieved": "The required information is not ready yet. Please try again. (Error Code: CRED-001)",
+        "googleRegistrationError": "An error occurred during Google registration. Please register using your email and password instead.",
+        "freeTrialLimitReached": "Too many trial accounts have been used on this device. We have this limit to prevent abuse. If you believe this is a mistake, please contact us. (Request ID: ACC-001)"
+      },
+      "logout": {
+        "logoutSuccess": "Logged out successfully.",
+        "refreshTokenRequired": "Logout could not be completed due to missing required information. Error code: ERR-LOGOUT-01",
+        "blacklistError": "An error occurred during logout. Error code: ERR-LOGOUT-02",
+        "invalidOrExpiredToken": "Invalid or expired session. Error code: ERR-LOGOUT-03"
+      }
+    },
+    "activation": {
+      "activationEmailAlreadySent": "Activation email has already been sent. Please wait.",
+      "activationEmailSent": "Activation email sent.",
+      "unexpectedError": "An unexpected error occurred.",
+      "invalidEmailOrCode": "Invalid email or code. Error code: ACT-101",
+      "accountAlreadyActivated": "Your account is already activated. Error code: ACT-102",
+      "invalidOrExpiredCode": "Invalid or expired code. Error code: ACT-103",
+      "accountActivatedSuccess": "Your account has been activated successfully. You can now log in.",
+      "freePlanNotFound": "Free plan not found. Please contact support. Error code: ACT-104",
+      "freePlanAssignFailed": "Could not assign free plan, but your account has been activated. Error code: ACT-105"
+    },
+    "forgot": {
+      "passwordResetSent": "If this email is registered, a password reset link has been sent.",
+      "passwordResetTooSoon": "Password reset link was sent recently. Please try again in a few minutes."
+    },
+    "resetPassword": {
+      "invalidOrExpired": "Invalid or expired password reset link.",
+      "passwordsDoNotMatch": "Passwords do not match.",
+      "success": "Your password has been reset successfully."
+    },
+    "updateUser": {
+      "passwordLength": "Password must be 8-32 characters.",
+      "confirmPasswordRequired": "This field is required.",
+      "passwordsDoNotMatch": "Passwords do not match.",
+      "success": "User information updated successfully."
+    },
+    "deleteUser": {
+      "cannotDeleteOwn": "You cannot delete your own account.",
+      "deletedSuccessfully": "Your account has been deleted successfully."
+    },
+    "getToken": {
+      "notAcceptCookies": "Action could not be completed. Please clear your browser cache and ensure cookies are accepted. If the issue persists, contact our support team with ERROR CODE [COOK-011]."
+    },
+    "classify": {
+      "textRequired": "Text is required.",
+      "logIn": "Insufficient tokens. Please log in to continue.",
+      "upgradePlan": "Insufficient tokens. Please upgrade your plan to continue.",
+      "activateEmail": "Insufficient tokens. Please activate your email to continue."
+    },
+    "feedback": {
+      "userNotFound": "User not found.",
+      "feedbackBanned": "You are temporarily banned from submitting feedback. Please wait until {{ban_end}}.",
+      "feedbackLimit": "You have reached the daily feedback limit. Please try again tomorrow.",
+      "inputNotFound": "Input not found.",
+      "feedbackAlreadySubmitted": "You have already submitted feedback for this input.",
+      "feedbackSubmitted": "Your feedback has been submitted successfully."
+    },
+    "contact": {
+      "tempNotFound": "An unexpected error occurred. Please clear your browser's cache and ensure cookies are accepted. If the issue persists, contact our support team with ERROR CODE [TEMP-110].",
+      "fullNameEmailRequired": "'Full Name' and 'Email' fields must be filled to send a message.",
+      "contactCreated": "Your message has been sent successfully.",
+      "contactLimit": "You have reached the daily limit for sending contact messages. Please try again tomorrow."
+    },
+    "RequestLimit": "Throttled due to too many requests. Please try again in {{seconds}} seconds.",
+    "plans": {
+      "planRequired": "You need to select a plan.",
+      "planNotFound": "The selected plan was not found.",
+      "tokenNotSupported": "The selected plan does not support API tokens.",
+      "planPurchased": "Plan '{{plan_name}}' purchased successfully.",
+      "apiTokenGenerated": "API token generated successfully for plan '{{plan_name}}'."
+    }
+  }
+}

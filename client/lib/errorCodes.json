@@ -1,0 +1,27 @@
+{
+  "TEMP-001": {
+    "title": "Temp Account Required",
+    "reasons": [
+      "Tarayıcınızın çerezleri kabul edilmedi.",
+      "LocalStorage içinde cookie_consent bilgisi yanlış.",
+      "IP veya cihaz bilgisi çakışması."
+    ]
+  },
+  "COOK-001":{
+    "title": "User not accept cookies",
+    "reasons":[
+        "kullanıcı bir türlü başarıp çerezleri atlatmış olabilir",
+        "önceden başka bir hesap var ve cookie kabul etmiş fakat yeni hesap oluşmuş"
+    ]
+  },
+  "CRED-001": {
+    "title": "Credential Not Retrieved",
+    "reasons": [
+      "Gerekli bilgiler geçici olarak alınamadı.",
+      "Kullanıcı tarayıcısı bilgileri alırken credential göndermemiş",
+      "Kullanıcının tarayıcı veya ağ durumu bilgilerin alınmasını engelliyor olabilir."
+    ]
+  }
+}
+
+

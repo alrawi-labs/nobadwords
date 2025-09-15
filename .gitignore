@@ -1,0 +1,28 @@
+# Node modules
+node_modules/
+.builder/
+
+# Build output
+dist/
+client/dist/
+build/
+
+# Environment variables
+.env
+
+# Lock files (istersen pnpm için bırakabilirsin)
+package-lock.json
+pnpm-lock.yaml
+
+# OS ve IDE dosyaları
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Netlify & Docker
+netlify/
+.dockerignore
+
+# Cache & logs
+*.log

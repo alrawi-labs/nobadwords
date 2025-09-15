@@ -1,0 +1,808 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "classify": "Classifier",
+    "plans": "Forfaits",
+    "integration": "Intégration",
+    "history": "Historique",
+    "about": "À propos",
+    "contact": "Contact"
+  },
+  "title": {
+    "home": "Accueil",
+    "classify": "Classifier",
+    "plans": "Plans",
+    "history": "Historique",
+    "integration": "Intégration",
+    "feedback": "Retour",
+    "auth": "Connexion/Inscription",
+    "forgot": "Mot de Passe Oublié",
+    "reset": "Réinitialiser le Mot de Passe",
+    "activation": "Activation du Compte",
+    "profile": "Profil",
+    "about": "À Propos",
+    "contact": "Contact",
+    "payment/confirm": "Confirmation de Paiement",
+    "privacy": "Politique de Confidentialité",
+    "verify-email": "Vérifier l'Email",
+    "notfound": "Page Non Trouvée"
+  },
+  "common": {
+    "token": "Jeton",
+    "themeToggleAria": "Changer le thème",
+    "pricing": "Tarifs",
+    "profile": "Profil",
+    "copyCode": "Copier le code",
+    "apiUsage": "Utiliser avec l'API",
+    "freeStart": "Commencer gratuitement",
+    "tryNow": "Essayer maintenant",
+    "viewPlans": "Voir les forfaits",
+    "login": "Connexion",
+    "loginRegister": "Connexion / Inscription",
+    "startAnalysis": "Lancer l'analyse",
+    "activateTitle": "Confirmez votre e‑mail",
+    "activateDesc": "Veuillez activer votre e‑mail pour débloquer toutes les fonctionnalités (démo).",
+    "activateNow": "Activer",
+    "activated": "Activé",
+    "loading": "Chargement",
+    "notFound": "Introuvable"
+  },
+  "verify": {
+    "title": "Vérifiez votre e‑mail",
+    "desc": "Nous avons envoyé un code à 6 chiffres à : {{email}}",
+    "codeLabel": "Saisissez le code de vérification",
+    "submit": "Vérifier",
+    "resend": "Renvoyer le code",
+    "sent": "Code de vérification envoyé",
+    "invalid": "Code invalide",
+    "success": "E‑mail vérifié",
+    "congratsTitle": "Félicitations !",
+    "congratsDesc": "Votre e‑mail est vérifié. Profitez de votre cadeau — bienvenue !",
+    "continue": "Continuer",
+    "demoCode": "Code démo : {{code}}",
+    "sendError": "La vérification n’a pas pu être envoyée"
+  },
+  "hero": {
+    "badge": "Détection de toxicité par IA",
+    "title": "Modérez vos textes en toute sécurité",
+    "desc": "Lister les mots toxiques dans les messages courts, renvoyer 1/0 pour les textes longs. Utilisation via le panneau ou l'API.",
+    "limitInfo": "75 jetons avant connexion, 1000 par jour après connexion.",
+    "perks": [
+      "Disponibilité 99,9%",
+      "Intégration en quelques minutes",
+      "Conforme RGPD",
+      "Temps réel"
+    ]
+  },
+  "features": {
+    "title": "Fonctionnalités",
+    "description": "Les fonctionnalités principales de notre plateforme sont conçues pour simplifier l'expérience utilisateur et vous permettre de créer du contenu efficacement.",
+    "secureModeration": {
+      "title": "Modération sûre",
+      "desc": "Détectez le contenu toxique avec une IA et un algorithme basé sur un dictionnaire. Amélioration continue grâce aux retours."
+    },
+    "easyIntegration": {
+      "title": "Intégration facile",
+      "desc": "Intégrez en quelques minutes avec une clé API. Utilisation et limites basées sur des jetons."
+    },
+    "historyAnalytics": {
+      "title": "Historique et analyses",
+      "desc": "Consultez et supprimez les analyses précédentes, signalez les erreurs de classification."
+    }
+  },
+  "how": {
+    "title": "Comment ça marche",
+    "steps": [
+      {
+        "title": "Envoyer le texte",
+        "desc": "Soumettez votre texte via le panneau ou l'API"
+      },
+      {
+        "title": "IA + Dictionnaire",
+        "desc": "Un modèle hybride réalise la détection de toxicité"
+      },
+      {
+        "title": "Obtenir le résultat",
+        "desc": "Mots pour un court texte, 1/0 + ratio pour un long texte"
+      }
+    ]
+  },
+  "languages": {
+    "nameTr": "Turc",
+    "nameAr": "Arabe",
+    "nameEn": "Anglais",
+    "flagTr": "🇹🇷",
+    "flagAr": "🇮🇶",
+    "flagEn": "🇺🇸",
+    "full": "Support Complet",
+    "partial": "Support Partiel",
+    "fullDescription": "Filtrage avec une grande précision",
+    "partialDescription": "Fonctionnalités de filtrage de base",
+    "exampleAr": "مثال: 'هذا نص جميل جدًا' ← نظيف",
+    "exampleTr": "Örnek: 'Bu çok güzel bir metin' → Temiz",
+    "exampleEn": "Example: 'This is a very nice text' → Clean",
+    "highAccuracy": "Haute Précision",
+    "fastProcessing": "Traitement Rapide",
+    "comprehensiveDictionary": "Dictionnaire Complet",
+    "basicFiltering": "Filtrage de Base",
+    "continuousImprovement": "Amélioration Continue",
+    "title": "Support Multilingue",
+    "subtitle": "Filtrage Puissant en Trois Langues",
+    "description": "Notre modèle d'IA offre un support complet pour le turc et l'arabe, et un support partiel pour l'anglais, desservant ainsi un large public."
+  },
+  "testimonials": {
+    "title": "Ce que disent nos utilisateurs",
+    "items": [
+      "Le contenu toxique a chuté de 80% dans notre application communautaire.",
+      "L'intégration API a pris 15 minutes.",
+      "L'équipe support est excellente."
+    ]
+  },
+  "faq": {
+    "title": "Foire aux questions",
+    "q1": "Comment fonctionnent les limites de jetons ?",
+    "a1": "75 jetons avant connexion, 1000 par jour après. Achetez un forfait pour ajouter plus de jetons.",
+    "q2": "Comment sont traités les paiements ?",
+    "a2": "Après un paiement sécurisé via iyzico, votre clé API et vos jetons sont activés.",
+    "q3": "Quel est le résultat renvoyé ?",
+    "a3": "Pour un texte court : liste de mots toxiques. Pour un texte long : 1/0 et pourcentage toxic_ratio."
+  },
+  "cta": {
+    "title": "Commencer gratuitement",
+    "desc": "1 000 jetons avec la démo gratuite. Passez à tout moment ou achetez des jetons supplémentaires."
+  },
+  "code": {
+    "exampleText": "texte d'exemple"
+  },
+  "plans": {
+    "badge": "Forfaits flexibles",
+    "title": "Forfaits et tarifs",
+    "subtitle": "Choisissez le nombre de jetons et la durée adaptés à vos besoins. Mettez à niveau à tout moment ou achetez des jetons supplémentaires.",
+    "recommended": "Recommandé",
+    "perPackage": "/ forfait",
+    "token": "jeton",
+    "days": "jours",
+    "buy": "Acheter maintenant",
+    "paid": "Payé",
+    "unpaid": "Non payé",
+    "active": "Actif",
+    "inactive": "Inactif",
+    "features": {
+      "api": "Accès API",
+      "history": "Voir l'historique",
+      "supportStandard": "Support standard",
+      "feedbackPriority": "Priorité aux retours",
+      "securityAdvanced": "Sécurité avancée",
+      "supportPriority": "Support prioritaire",
+      "dedicatedManager": "Gestionnaire de compte dédié",
+      "customSLA": "SLA personnalisé",
+      "limit": "{{n}} jetons"
+    },
+    "items": {
+      "free": {
+        "name": "Démo gratuite",
+        "desc": "Idéal pour démarrer"
+      },
+      "starter": {
+        "name": "Starter",
+        "desc": "Pour les loisirs et petits projets"
+      },
+      "pro": {
+        "name": "Pro",
+        "desc": "Pour les équipes en croissance"
+      },
+      "enterprise": {
+        "name": "Entreprise",
+        "desc": "Pour les besoins des entreprises"
+      }
+    }
+  },
+  "classify": {
+    "title": "Analyse de texte (Classify)",
+    "desc": "Liste les mots toxiques détectés dans les messages courts. Pour les textes longs, renvoie 1 (toxique) ou 0 (non toxique).",
+    "pasteTitle": "Collez votre texte",
+    "placeholder": "Saisissez le texte ici...",
+    "dailyLimitLabel": "Limite quotidienne",
+    "usedLabel": "Utilisés",
+    "remainingLabel": "Restants",
+    "consume": "Cela a consommé environ ~ {{n}} jetons",
+    "dailyUsage": "Utilisation quotidienne",
+    "analyzing": "Analyse en cours...",
+    "analyze": "Analyser",
+    "limitExceeded": "Limite quotidienne dépassée. Raccourcissez le texte ou connectez‑vous.",
+    "resultTitle": "Résultat",
+    "toxic": "Grossier",
+    "nonToxic": "Non grossier",
+    "toxicRatioViz": "Visualisation du taux de grossièreté",
+    "toxicWords": "Mots grossiers",
+    "analysisError": "Une erreur s’est produite lors de l’analyse",
+    "networkError": "Erreur réseau",
+    "fields": {
+      "predicted_class": "Classe Prédite",
+      "toxic_ratio": "Taux de Toxicité",
+      "tokens": "Jetons",
+      "is_temp": "Temporaire",
+      "usage": "Utilisation des jetons",
+      "used": "Utilisés",
+      "remaining": "Restants"
+    }
+  },
+  "feedback": {
+    "toastSuccess": "Merci ! Votre retour a été reçu.",
+    "toastError": "Impossible d'enregistrer le retour",
+    "ask": "Souhaitez‑vous laisser un retour sur le résultat ?",
+    "send": "Envoyer",
+    "prompt": "Quel est le problème ? Veuillez expliquer brièvement.",
+    "placeholder": "Ex : Ne devrait pas être marqué comme 'haine'...",
+    "cancel": "Annuler",
+    "feedbackLimit": "Vous avez atteint la limite quotidienne de retours. Réessayez demain.",
+    "sending": "Envoi des commentaires"
+  },
+  "integration": {
+    "title": "Intégration",
+    "desc": "Connectez NoBadWords à votre application avec votre clé API. Créez une clé dans Profil > Clés API et suivez les exemples ci‑dessous.",
+    "basics": {
+      "title": "Principes de base",
+      "baseUrl": "URL de base",
+      "endpoint": "Endpoint",
+      "auth": "Auth",
+      "body": "Body"
+    },
+    "examples": {
+      "title": "Exemple d'utilisation"
+    },
+    "tabs": {
+      "curl": "cURL",
+      "node": "Node.js (fetch)",
+      "python": "Python (requests)"
+    },
+    "response": {
+      "title": "Réponse d'exemple"
+    },
+    "errors": {
+      "title": "Gestion des erreurs",
+      "unauthorized": "401 Non autorisé : Clé API manquante/invalide.",
+      "tooMany": "429 Trop de requêtes : Votre limite de jetons est épuisée.",
+      "badRequest": "400 Requête invalide : JSON invalide ou texte vide."
+    },
+    "security": {
+      "title": "Recommandations de sécurité",
+      "noClientStore": "Ne stockez pas les clés API côté client ; faites un proxy côté serveur.",
+      "rotateKeys": "Faites tourner les clés régulièrement.",
+      "rateLimit": "Appliquez une limitation de débit et des restrictions IP."
+    }
+  },
+  "history": {
+    "title": "Historique",
+    "desc": "Vos analyses précédentes seront listées ici. Utilisez les filtres ci‑dessous pour rechercher.",
+    "searchLabel": "Recherche",
+    "searchPlaceholder": "rechercher dans le texte...",
+    "startLabel": "Début",
+    "endLabel": "Fin",
+    "predLabel": "Prédiction",
+    "selectPlaceholder": "Sélectionner",
+    "predAll": "Tous",
+    "predToxic": "Toxique (1)",
+    "predNonToxic": "Non toxique (0)",
+    "minRatioLabel": "Min. toxic_ratio (%)",
+    "minRatioPlaceholder": "ex. 80",
+    "onlyWithWords": "Uniquement les entrées avec toxic_words",
+    "reset": "Réinitialiser",
+    "filter": "Filtrer",
+    "empty": "Aucune entrée pour le moment. Après une analyse, l'historique apparaîtra ici.",
+    "table": {
+      "date": "Date",
+      "predicted_class": "Classe Prédite",
+      "toxic_ratio": "Ratio Toxique",
+      "tokens": "Jetons",
+      "toxic_words": "Mots Toxiques",
+      "text": "Texte"
+    }
+  },
+  "about": {
+    "title": "À propos",
+    "intro": "NoBadWords offre une détection moderne de la toxicité pour sécuriser vos communautés et applications. Rapide, fiable et adapté aux développeurs.",
+    "badge": "Badge",
+    "floating": [
+      "IA",
+      "Sans grossièretés",
+      "Sûr",
+      "Pas de contenu toxique"
+    ],
+    "robotBubble": "Contenu propre",
+    "stats": {
+      "processed": "Messages traités",
+      "latency": "Latence moyenne",
+      "accuracy": "Précision",
+      "uptime": "Disponibilité"
+    },
+    "features": {
+      "security": {
+        "title": "Sécurité",
+        "desc": "Haute précision avec des techniques modernes"
+      },
+      "community": {
+        "title": "Communauté",
+        "desc": "Traitez des millions de messages en toute sécurité"
+      },
+      "success": {
+        "title": "Excellence",
+        "desc": "Performance et scalabilité"
+      }
+    },
+    "mission": {
+      "title": "Mission",
+      "desc": "Faciliter la création de communautés plus saines en détectant tôt le langage nuisible.",
+      "items": [
+        "API adaptée aux développeurs",
+        "Métriques justes et transparentes",
+        "Modèles en amélioration continue"
+      ]
+    },
+    "vision": {
+      "title": "Vision",
+      "desc": "Être une référence mondiale en sécurité de contenu et la rendre accessible à tous.",
+      "items": [
+        "Modération en temps réel",
+        "Couverture multilingue",
+        "Infrastructure scalable"
+      ]
+    },
+    "timeline": {
+      "title": "Notre parcours",
+      "items": {
+        "2022": "Idée et prototype",
+        "2023": "Première bêta et intégrations",
+        "2024": "Support multilingue et analyses",
+        "2025": "Forfaits Enterprise et SLA"
+      }
+    },
+    "cta": {
+      "title": "Prêt à protéger votre communauté ?",
+      "desc": "Essayez gratuitement maintenant, mettez à niveau à tout moment."
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Écrivez‑nous pour des questions ou partenariats. Réponse sous 24h.",
+    "toastSuccess": "Votre message a été reçu. Merci !",
+    "toastError": "Impossible d'enregistrer le message",
+    "form": {
+      "title": "Envoyer un message",
+      "nameLabel": "Nom complet",
+      "namePlaceholder": "Votre nom",
+      "emailLabel": "E‑mail",
+      "emailPlaceholder": "exemple@mail.com",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Écrivez votre message...",
+      "send": "Envoyer"
+    },
+    "info": {
+      "title": "Coordonnées",
+      "address": "Istanbul, Turquie",
+      "hours": "Jours ouvrés 09:00 – 18:00"
+    },
+    "support": {
+      "title": "Support",
+      "tech": "Technique",
+      "sales": "Ventes",
+      "privacy": "Confidentialité/RGPD"
+    },
+    "faq": {
+      "title": "FAQ",
+      "q1": "Quel est votre délai de réponse ?",
+      "a1": "Nous répondons généralement dans la même journée ouvrée.",
+      "q2": "Y a‑t‑il une limite d'utilisation de la démo ?",
+      "a2": "75 jetons avant connexion, 1000 par jour après.",
+      "q3": "Offres Enterprise ?",
+      "a3": "Contactez‑nous pour un SLA personnalisé et des exigences de sécurité."
+    }
+  },
+  "auth": {
+    "title": "Connexion / Inscription",
+    "tabs": {
+      "login": "Connexion",
+      "register": "Inscription"
+    },
+    "login": {
+      "idLabel": "Identifiant / E‑mail",
+      "idPlaceholder": "identifiant ou e‑mail",
+      "passLabel": "Mot de passe",
+      "passPlaceholder": "••••••••",
+      "submit": "Se connecter",
+      "forgot": "Mot de passe oublié",
+      "toastInvalid": "Identifiants invalides",
+      "toastSuccess": "Connexion réussie",
+      "loading": "Connexion en cours...",
+      "toastRequired": "Veuillez remplir les informations de connexion"
+    },
+    "register": {
+      "firstLabel": "Prénom",
+      "firstPlaceholder": "prénom",
+      "lastLabel": "Nom",
+      "lastPlaceholder": "nom",
+      "emailLabel": "E‑mail",
+      "emailPlaceholder": "email",
+      "passLabel": "Mot de passe",
+      "passPlaceholder": "••••••••",
+      "submit": "S'inscrire",
+      "toastRequired": "Tous les champs sont requis",
+      "toastExists": "Cet e‑mail est déjà enregistré",
+      "toastSuccess": "Inscription terminée",
+      "loading": "Inscription en cours..."
+    },
+    "or": "ou",
+    "google": {
+      "login": "Se connecter avec Google",
+      "register": "S'inscrire avec Google",
+      "loading": "Connexion via Google...",
+      "success": "Connexion réussie avec Google !"
+    }
+  },
+  "notFound": {
+    "badgeCode": "Erreur 404",
+    "badgeSlug": "/page‑introuvable",
+    "title": "Nous sommes perdus !",
+    "desc": "La page demandée est introuvable ou a peut‑être été déplacée. URL :",
+    "backHome": "Retour à l'accueil"
+  },
+  "feedbackPage": {
+    "title": "Feedback",
+    "desc": "Signalez ici les erreurs de classification. Les utilisateurs envoyant trop de rapports peuvent être bloqués.",
+    "placeholder": "Expliquez l'erreur de classification, joignez le texte si possible...",
+    "send": "Envoyer",
+    "note": "Note : Ceci est un élément de démonstration. L'envoi de feedback et les limites de débit seront intégrés."
+  },
+  "forgot": {
+    "title": "Mot de passe oublié",
+    "emailLabel": "E‑mail",
+    "emailPlaceholder": "email",
+    "submit": "Envoyer l'e‑mail de réinitialisation",
+    "demoTextPrefix": "Démo : Au lieu de l'e‑mail, vous pouvez aller directement à",
+    "demoLinkText": "/reset",
+    "demoTextSuffix": "la page.",
+    "toastNotFound": "E‑mail introuvable",
+    "toastSent": "Lien de réinitialisation envoyé à votre e‑mail",
+    "toastError": "Une erreur est survenue pendant le processus",
+    "emailRequired": "Veuillez entrer votre e-mail",
+    "backToLogin": "Retour à la connexion",
+    "loginLink": "Lien de connexion"
+  },
+  "paymentConfirm": {
+    "title": "Confirmation de paiement",
+    "desc": "Vérifiez les détails ci‑dessous avant de finaliser votre achat.",
+    "steps": {
+      "plan": "Choix du forfait",
+      "payment": "Paiement",
+      "confirm": "Confirmation"
+    },
+    "orderSummary": "Récapitulatif de commande",
+    "labels": {
+      "plan": "Forfait :",
+      "amount": "Montant :",
+      "tokens": "Jetons :",
+      "days": "Durée :",
+      "daysSuffix": "jours"
+    },
+    "secureLine": "Paiement sécurisé • Connexion chiffrée • Garantie de remboursement (démo)",
+    "methodTitle": "Méthode de paiement",
+    "iyzico": {
+      "name": "iyzico",
+      "selected": "Sélectionné",
+      "desc": "Paiements régionaux, approbation rapide (démo)."
+    },
+    "stripe": {
+      "name": "Stripe",
+      "selected": "Sélectionné",
+      "desc": "Réseau de paiement mondial (démo)."
+    },
+    "acceptPrivacy": "J'accepte la politique de confidentialité",
+    "privacyLink": "(Politique de confidentialité)",
+    "tls": "TLS 1.3 • PCI‑DSS (démo)",
+    "confirm": "Confirmer le paiement",
+    "confirmTitle": "Acceptez la politique de confidentialité pour continuer",
+    "cancel": "Annuler",
+    "demoBanner": "Environnement de démonstration — aucun débit réel",
+    "toastPrivacyAccepted": "Politique de confidentialité acceptée",
+    "toastPaid": "Paiement confirmé"
+  },
+  "privacyPage": {
+    "title": "Politique de confidentialité",
+    "desc": "Nous expliquons comment nous traitons et protégeons vos données.",
+    "summaryTitle": "Résumé",
+    "summary": {
+      "p1": "Votre compte et vos informations de profil sont stockés en toute sécurité.",
+      "p2": "Les analyses de texte et les données d'utilisation de l'API servent à améliorer la qualité du service.",
+      "p3": "Les données de paiement sont traitées via des prestataires sécurisés tels que PayTR/iyzico.",
+      "p4": "Non partagées avec des tiers sauf obligation légale ou contractuelle."
+    },
+    "rightsTitle": "Vos droits",
+    "rights": {
+      "p1": "Au titre du RGPD, vous avez un droit d'accès, de rectification et d'effacement.",
+      "p2": "Contact : privacy@nobadwords.dev"
+    }
+  },
+  "reset": {
+    "title": "Réinitialiser le mot de passe",
+    "newPassLabel": "Nouveau mot de passe",
+    "confirmPassLabel": "Mot de passe (à nouveau)",
+    "placeholder": "••••••••",
+    "submit": "Mettre à jour le mot de passe",
+    "toastInvalidLink": "Lien invalide",
+    "toastMismatch": "Les mots de passe ne correspondent pas",
+    "toastUserMissing": "Utilisateur introuvable",
+    "toastSuccess": "Votre mot de passe a été mis à jour",
+    "toastError": "Une erreur est survenue pendant le processus"
+  },
+  "profile": {
+    "title": "Profil",
+    "pleaseLogin": "Veuillez vous connecter pour continuer.",
+    "updated": "Profil mis à jour",
+    "updateError": "Erreur lors de la mise à jour",
+    "summary": {
+      "plan": "Forfait :",
+      "remaining": "Restant :"
+    },
+    "plan": {
+      "freeDemo": "Démo gratuite"
+    },
+    "labels": {
+      "first": "Prénom",
+      "last": "Nom",
+      "email": "E‑mail",
+      "plan": "Forfait",
+      "remainingTokens": "Jetons restants"
+    },
+    "personal": {
+      "title": "Informations personnelles",
+      "edit": "Modifier"
+    },
+    "password": {
+      "new": "Nouveau mot de passe",
+      "confirm": "Mot de passe (à nouveau)",
+      "save": "Enregistrer",
+      "cancel": "Annuler",
+      "mismatch": "Les mots de passe ne correspondent pas"
+    },
+    "keys": {
+      "title": "Clés API",
+      "info": "Créez une nouvelle clé API à utiliser dans vos applications.",
+      "new": "Nouvelle clé API",
+      "empty": "Pas encore de clés.",
+      "copy": "Copier",
+      "copied": "Clé copiée"
+    },
+    "purchases": {
+      "title": "Forfaits achetés",
+      "desc": "Vos forfaits achetés seront listés ici (nom, jetons, jours, prix et date). Ils seront ajoutés automatiquement après paiement.",
+      "empty": "Aucun achat trouvé"
+    },
+    "payments": {
+      "title": "Historique des paiements",
+      "demoAdd": "Ajouter une démo",
+      "clear": "Effacer",
+      "empty": "Aucun enregistrement de paiement pour l'instant.",
+      "paymentWord": "Paiement",
+      "labels": {
+        "user": "Utilisateur",
+        "plan": "Forfait",
+        "amount": "Montant",
+        "txnId": "Txn ID"
+      },
+      "copy": "Copier",
+      "copyToast": "Copié",
+      "unknown": "inconnu",
+      "state": {
+        "pending": "En attente",
+        "paid": "Payé",
+        "canceled": "Annulé",
+        "refunded": "Remboursé",
+        "failed": "Échoué"
+      },
+      "toastSeeded": "Paiements de démo ajoutés",
+      "toastSeedError": "Impossible d'ajouter les données de démo",
+      "toastCleared": "Historique des paiements effacé"
+    },
+    "logout": "Déconnexion"
+  },
+  "privacyModal": {
+    "title": "Votre confidentialité est notre priorité",
+    "p1": "Chez NoBadWords, la sécurité et la confidentialité de vos données sont très importantes pour nous.",
+    "p2": "Votre compte et votre profil sont en sécurité.",
+    "p3": "Vos analyses de texte et données d'utilisation de l'API sont utilisées uniquement à des fins de service.",
+    "p4": "Vos informations de paiement sont traitées via nos prestataires sécurisés (PayTR, iyzico).",
+    "p5": "En utilisant la plateforme et en achetant un forfait, vous acceptez cette politique de confidentialité et les conditions d'utilisation.",
+    "link": "Politique de confidentialité détaillée",
+    "cancel": "Annuler",
+    "accept": "J'accepte"
+  },
+  "activation": {
+    "checkEmailTitle": "Activez Votre Compte",
+    "checkEmailDesc": "Pour utiliser nos services et obtenir les jetons nécessaires, veuillez activer votre adresse e-mail.",
+    "cantFindEmail": "Vous ne trouvez pas l'e-mail ?",
+    "checkSpam": "Vérifiez votre dossier Spam ou Courrier indésirable.",
+    "checkEmail": "Assurez-vous d'avoir utilisé la bonne adresse e-mail.",
+    "waitFew": "L'e-mail peut prendre quelques minutes à arriver.",
+    "sendEmail": "Envoyer l'e-mail d'activation",
+    "sendingEmail": "Envoi de l'e-mail",
+    "home": "Accueil",
+    "errorGeneral": "Une erreur s'est produite. Veuillez réessayer.",
+    "errorNetwork": "Erreur réseau. Veuillez vérifier votre connexion Internet.",
+    "errorSend": "Une erreur est survenue lors de l'envoi de l'e-mail. Veuillez réessayer."
+  },
+  "cookieConsent": {
+    "title": "Nous Respectons Votre Vie Privée",
+    "description": "Nous utilisons des cookies pour garantir le bon fonctionnement sécurisé de notre site web et vous offrir une meilleure expérience. Le choix vous appartient entièrement.",
+    "moreInfo": "Pour plus d'informations, veuillez consulter notre",
+    "privacyPolicy": "Politique de Cookies",
+    "moreInfoSuffix": "",
+    "acceptAll": "Accepter & Continuer",
+    "essential": "Essentiels Seulement",
+    "privacyModal": {
+      "title": "Politique de Cookies",
+      "intro": "Lorsque vous visitez notre site web, nous utilisons des cookies et des technologies similaires pour vous offrir l'expérience la plus sûre, la plus rapide et la plus personnalisée. Les cookies jouent un rôle critique dans le bon fonctionnement du site, la mémorisation des préférences utilisateur, l'amélioration de la sécurité et l'analyse des données d'utilisation du site. Grâce à ces cookies, vous pouvez utiliser notre site web de manière optimisée à chaque visite. Ci-dessous, les types de cookies que nous utilisons, leurs objectifs, leurs durées d'utilisation et leurs bases légales sont expliqués en détail.",
+      "essential": {
+        "title": "🛡️ Cookies Strictement Nécessaires",
+        "description": "Ces cookies sont essentiels pour le bon fonctionnement des fonctionnalités de base de notre site web et pour assurer la sécurité. Ils ne sont pas utilisés pour mémoriser les préférences utilisateur ou fournir du contenu personnalisé ; ils sont exclusivement destinés à la sécurité et à la fonctionnalité du système. Si ces cookies sont désactivés, certaines sections peuvent ne pas fonctionner ou l'utilisation du site peut ne pas être possible.",
+        "items": [
+          {
+            "title": "Adresse IP et Empreinte d'Appareil :",
+            "description": "À chaque visite de notre site web, les informations uniques de votre appareil et votre adresse IP sont enregistrées de manière anonyme. Ces données nous aident à nous protéger contre les bots malveillants, les attaques automatisées ou les tentatives de spam. Les données sont utilisées uniquement à des fins de sécurité et ne peuvent pas être identifiées personnellement."
+          },
+          {
+            "title": "Gestion de Session :",
+            "description": "Assure la gestion sécurisée des connexions utilisateur et de vos informations de session. Cela protège la sécurité de votre compte et garantit que les bonnes opérations sont effectuées."
+          }
+        ]
+      },
+      "analytics": {
+        "title": "📊 Cookies Analytiques",
+        "description": "Les cookies analytiques nous aident à comprendre l'utilisation du site et le comportement des visiteurs. Grâce à ces cookies, nous pouvons analyser quelles pages sont visitées plus fréquemment, quelles fonctionnalités les utilisateurs utilisent et quelles zones du site doivent être améliorées. Les cookies analytiques sont optionnels, et si vous ne les acceptez pas, le site fonctionnera toujours mais les données d'utilisation ne seront pas collectées.",
+        "items": [
+          {
+            "title": "Analyse des Visites de Pages :",
+            "description": "Suit quelles pages sont visitées et les interactions des utilisateurs. De cette façon, le contenu et l'expérience sont continuellement améliorés."
+          },
+          {
+            "title": "Comportement Utilisateur :",
+            "description": "Suit anonymement les chemins que les utilisateurs empruntent sur le site et les fonctionnalités qu'ils utilisent. Ces informations sont utilisées pour l'optimisation des performances et l'amélioration de l'expérience utilisateur."
+          }
+        ]
+      },
+      "functional": {
+        "title": "🎨 Cookies Fonctionnels et de Préférence",
+        "description": "Les cookies fonctionnels sont utilisés pour personnaliser l'expérience utilisateur. Par exemple, nous pouvons nous rappeler dans quelle langue vous souhaitez voir le contenu ou dans quel mode visuel (sombre/clair) le site doit s'ouvrir. Accepter ces cookies est optionnel ; si vous ne les acceptez pas, le site fonctionnera toujours mais vous devrez spécifier vos préférences à nouveau.",
+        "items": [
+          {
+            "title": "Préférences de Langue et de Thème :",
+            "description": "Se souvient de la langue et du mode de thème dans lesquels vous souhaitez utiliser notre site. De cette façon, la même expérience est automatiquement fournie lors de votre prochaine visite."
+          },
+          {
+            "title": "Personnalisations de l'Interface Utilisateur :",
+            "description": "Vos préférences pour la mise en page, la taille de police et d'autres éléments visuels sont enregistrées sur le site. Cela permet aux visiteurs de vivre l'apparence la plus adaptée pour eux."
+          }
+        ]
+      },
+      "legal": {
+        "title": "⚖️ Conformité Légale et KVKK/RGPD",
+        "description": "Tous les cookies utilisés sur notre site sont gérés en conformité avec la législation KVKK en Turquie et le RGPD en Europe. Les données utilisateur sont traitées de manière anonyme ou chiffrée, la base légale est spécifiée et les droits des utilisateurs sont protégés. Les données collectées ne seront utilisées que pour les fins autorisées et le partage avec des tiers se fait entièrement dans le cadre légal."
+      },
+      "thirdParty": {
+        "title": "🔒 Consentement Tiers Caché",
+        "description": "En acceptant l'utilisation des cookies, vous donnez la permission de partager certaines de vos informations (comme votre adresse e-mail) avec nos partenaires commerciaux sous forme sécurisée et chiffrée. Ce partage est utilisé uniquement pour améliorer votre expérience sur le site, effectuer des analyses et vous fournir du contenu personnalisé. Ce consentement est placé naturellement au milieu du modal sans affecter l'expérience utilisateur et est légalement valide."
+      },
+      "control": {
+        "title": "⚙️ Vos Choix et Contrôle",
+        "description": "Tous les choix de cookies sont entièrement sous votre contrôle. En cliquant sur le bouton \"Accepter & Continuer\", vous acceptez tous les cookies obligatoires et optionnels. Si vous préférez l'option \"Essentiels Seulement\", seuls les cookies nécessaires au fonctionnement du site seront utilisés. De cette façon, votre sécurité est protégée et vous pouvez utiliser le site avec des fonctions de base."
+      },
+      "footer": "Cette politique de cookies a été mise à jour pour la dernière fois en septembre 2025. La politique est régulièrement révisée pour assurer le fonctionnement sécurisé et fluide de notre site web. Les utilisateurs sont considérés comme ayant accepté cette politique en continuant à utiliser le site. La vie privée et la sécurité des données sont toujours parmi nos questions prioritaires.",
+      "buttons": {
+        "essentialOnly": "Approuver Essentiels Seulement",
+        "acceptAll": "Accepter Tout"
+      }
+    }
+  },
+  "backend": {
+    "auth": {
+      "emailRequired": "Le champ e-mail est requis",
+      "emailExists": "Cet e-mail est déjà enregistré",
+      "emailInvalid": "Veuillez saisir une adresse e-mail valide",
+      "emailBlank": "L'e-mail ne peut pas être laissé vide",
+      "emailTooShort": "L'e-mail doit comporter au moins 6 caractères",
+      "emailTooLong": "L'e-mail peut comporter au maximum 128 caractères",
+      "passwordRequired": "Le champ du mot de passe est requis",
+      "passwordTooShort": "Le mot de passe doit comporter au moins 8 caractères",
+      "passwordTooLong": "Le mot de passe peut comporter au maximum 32 caractères",
+      "passwordBlank": "Le mot de passe ne peut pas être laissé vide",
+      "firstNameRequired": "Le champ du prénom est requis",
+      "lastNameRequired": "Le champ du nom de famille est requis",
+      "firstNameBlank": "Le prénom ne peut pas être laissé vide",
+      "lastNameBlank": "Le nom de famille ne peut pas être laissé vide",
+      "generalMaxLength": "Ce champ peut comporter au maximum 32 caractères",
+      "generalError": "Une erreur générale est survenue",
+      "temp": {
+        "notAcceptCookies": "L'action n'a pas pu être complétée. Veuillez vider le cache de votre navigateur et vous assurer que les cookies sont acceptés. Si le problème persiste, contactez notre équipe d'assistance avec le CODE D'ERREUR [COOK-001].",
+        "infoNotRetrieved": "Certaines informations n’ont pas pu être récupérées, veuillez réessayer.",
+        "blocked": "Votre appareil est temporairement bloqué jusqu'au {{blocked_until}}.",
+        "tempNotFound": "Une erreur inattendue s'est produite. Veuillez vider le cache de votre navigateur et vous assurer que les cookies sont acceptés. Si le problème persiste, contactez notre équipe d'assistance avec le CODE D'ERREUR [TEMP-011].",
+        "noInput": "Aucun utilisateur fourni. CODE D'ERREUR : TEMP-012"
+      },
+      "login": {
+        "invalidCredentials": "Aucun compte ne correspond aux identifiants saisis."
+      },
+      "register": {
+        "registrationError": "Une erreur est survenue lors de l'inscription (Code d'erreur: REG-001). Veuillez vider le cache de votre navigateur et contacter notre équipe d'assistance si le problème persiste.",
+        "credentialNotRetrieved": "Les informations requises ne sont pas encore disponibles. Veuillez réessayer. (Code d'erreur: CRED-001)",
+        "googleRegistrationError": "Une erreur s'est produite lors de l'inscription avec Google. Veuillez vous inscrire avec votre e-mail et mot de passe.",
+        "freeTrialLimitReached": "Trop de comptes d'essai ont été utilisés sur cet appareil. Nous avons cette limite pour empêcher les abus. Si vous pensez qu'il s'agit d'une erreur, veuillez nous contacter. (ID de demande : ACC-001)"
+      },
+      "logout": {
+        "logoutSuccess": "Déconnexion réussie.",
+        "refreshTokenRequired": "La déconnexion n'a pas pu être effectuée en raison d'informations requises manquantes. Code d'erreur: ERR-LOGOUT-01",
+        "blacklistError": "Une erreur est survenue lors de la déconnexion. Code d'erreur: ERR-LOGOUT-02",
+        "invalidOrExpiredToken": "Session invalide ou expirée. Code d'erreur: ERR-LOGOUT-03"
+      }
+    },
+    "activation": {
+      "activationEmailAlreadySent": "L'e-mail d'activation a déjà été envoyé. Veuillez patienter.",
+      "activationEmailSent": "L'e-mail d'activation a été envoyé.",
+      "unexpectedError": "Une erreur inattendue s'est produite.",
+      "invalidEmailOrCode": "E-mail ou code invalide. Code d'erreur : ACT-101",
+      "accountAlreadyActivated": "Votre compte est déjà activé. Code d'erreur : ACT-102",
+      "invalidOrExpiredCode": "Code invalide ou expiré. Code d'erreur : ACT-103",
+      "accountActivatedSuccess": "Votre compte a été activé avec succès. Vous pouvez maintenant vous connecter.",
+      "freePlanNotFound": "Aucun plan gratuit trouvé. Veuillez contacter le support. Code d'erreur : ACT-104",
+      "freePlanAssignFailed": "Impossible d'attribuer le plan gratuit, mais votre compte a été activé. Code d'erreur : ACT-105"
+    },
+    "forgot": {
+      "passwordResetSent": "Si cet e-mail est enregistré, un lien de réinitialisation du mot de passe a été envoyé.",
+      "passwordResetTooSoon": "Le lien de réinitialisation du mot de passe a été envoyé récemment. Veuillez réessayer dans quelques minutes."
+    },
+    "resetPassword": {
+      "invalidOrExpired": "Lien de réinitialisation du mot de passe invalide ou expiré.",
+      "passwordsDoNotMatch": "Les mots de passe ne correspondent pas.",
+      "success": "Votre mot de passe a été réinitialisé avec succès."
+    },
+    "updateUser": {
+      "passwordLength": "Le mot de passe doit comporter entre 8 et 32 caractères.",
+      "confirmPasswordRequired": "Ce champ est requis.",
+      "passwordsDoNotMatch": "Les mots de passe ne correspondent pas.",
+      "success": "Informations de l'utilisateur mises à jour avec succès."
+    },
+    "deleteUser": {
+      "cannotDeleteOwn": "Vous ne pouvez pas supprimer votre propre compte.",
+      "deletedSuccessfully": "Votre compte a été supprimé avec succès."
+    },
+    "getToken": {
+      "notAcceptCookies": "L'action n'a pas pu être complétée. Veuillez vider le cache de votre navigateur et vous assurer que les cookies sont acceptés. Si le problème persiste, contactez notre équipe d'assistance avec le CODE D'ERREUR [COOK-011]."
+    },
+    "classify": {
+      "textRequired": "Le texte est requis.",
+      "logIn": "Jetons insuffisants. Veuillez vous connecter pour continuer.",
+      "upgradePlan": "Jetons insuffisants. Veuillez mettre à niveau votre plan pour continuer.",
+      "activateEmail": "Jetons insuffisants. Veuillez activer votre e-mail pour continuer."
+    },
+    "feedback": {
+      "userNotFound": "Utilisateur non trouvé.",
+      "feedbackBanned": "Vous êtes temporairement banni de l'envoi de commentaires. Veuillez patienter jusqu'à {{ban_end}}.",
+      "feedbackLimit": "Vous avez atteint la limite quotidienne de commentaires. Veuillez réessayer demain.",
+      "inputNotFound": "Entrée non trouvée.",
+      "feedbackAlreadySubmitted": "Vous avez déjà soumis des commentaires pour cette entrée.",
+      "feedbackSubmitted": "Vos commentaires ont été soumis avec succès."
+    },
+    "contact": {
+      "tempNotFound": "Une erreur inattendue s'est produite. Veuillez vider le cache de votre navigateur et vous assurer que les cookies sont acceptés. Si le problème persiste, contactez notre équipe d'assistance avec le CODE D'ERREUR [TEMP-110].",
+      "fullNameEmailRequired": "Les champs 'Nom complet' et 'E-mail' doivent être remplis pour envoyer un message.",
+      "contactCreated": "Votre message a été envoyé avec succès.",
+      "contactLimit": "Vous avez atteint la limite quotidienne d'envoi de messages de contact. Veuillez réessayer demain."
+    },
+    "RequestLimit": "Limité en raison d'un trop grand nombre de demandes. Veuillez réessayer dans {{seconds}} secondes.",
+    "plans": {
+      "planRequired": "Vous devez sélectionner un plan.",
+      "planNotFound": "Le plan sélectionné n'a pas été trouvé.",
+      "tokenNotSupported": "Le plan sélectionné ne prend pas en charge les jetons API.",
+      "planPurchased": "Plan '{{plan_name}}' acheté avec succès.",
+      "apiTokenGenerated": "Jeton API généré avec succès pour le plan '{{plan_name}}'."
+    }
+  }
+}
