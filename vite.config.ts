@@ -9,7 +9,15 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
     fs: {
-      allow: ["./client", "./shared"],
+      allow: [
+        // Kök dizin erişimi (index.html için gerekli)
+        "./",
+        // Mevcut izin verilen dizinler
+        "./client", 
+        "./shared",
+        // Node modules erişimi
+        "./node_modules"
+      ],
       deny: [".env", ".env.*", "*.{crt,pem}", "**/.git/**", "server/**"],
     },
   },

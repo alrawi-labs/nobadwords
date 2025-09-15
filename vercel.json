@@ -1,0 +1,12 @@
+{
+  "buildCommand": "cd frontend && pnpm install && pnpm build",
+  "outputDirectory": "frontend/dist/spa",
+  "installCommand": "cd frontend && pnpm install",
+  "devCommand": "cd frontend && pnpm dev",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
